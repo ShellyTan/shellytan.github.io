@@ -34,12 +34,24 @@ header div img {
 	width: 80px;
 }
 
-h1 {
+h1, h4 {
 	font-family: 'Didot', 'GFS Didot', serif;
 	font-size: 7em;
 	text-transform: uppercase;
 	/*color: #292f33;*/
 	color: #000000;
+}
+
+h4 {
+	font-size: 4em;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding-top: 30px;
+	padding-left: 15px;
 }
 
 .slide a{
@@ -92,21 +104,6 @@ footer div div a {
 	font-size: 25px;
 
 }
-
-/* Contact Page Styling */
-
-.contact-text{
-	font-family: 'PT Sans', sans-serif;
-	font-size: 18px;
-	line-height: 1.5em;
-	padding-top: 30px;
-	padding-left: 15px;
-}
-
-.contact-text a{
-	color: #2f4f4f;
-}
-
 #hide {
 	position: fixed;
 	top: 10px;
@@ -115,6 +112,25 @@ footer div div a {
 }
 #hide:hover {
 	color: #000000;
+}
+
+/* Contact Page Styling */
+.contact-text a{
+	color: #2f4f4f;
+}
+
+/* About Page Styling*/
+
+#about-pic {
+	width: 100%;
+}
+
+#about-text p {
+	padding-top: 50px;
+}
+
+#about-text p a {
+	font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -128,6 +144,9 @@ footer div div a {
 		font-size: 4em;
 	}
 
+	h4 {
+		text-align: center;
+	}
 	header div img {
 		float: none;
 		text-align: center;
