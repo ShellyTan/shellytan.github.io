@@ -8,10 +8,9 @@ nav {
 	margin-top: 50px;
 }
 
-nav ul li {
+nav a {
 	display: inline;
-	float: right;
-	list-style-type: none;
+	text-align: right;
 	margin-left: 10px;
 	margin-right: 10px;
 	text-transform: uppercase;
@@ -52,6 +51,7 @@ h1 {
 	padding: 50px 15px 50px 15px;
 	border-width: 0 0 1px 0;
 	border-style: solid;
+	text-align: center;
 }
 
 .footer-wrapper {
@@ -111,7 +111,17 @@ footer div div a {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 4em;
-  }
+	h1 {
+		font-size: 4em;
+	}
+
+	header div img {
+		float: none;
+		text-align: center;
+	}
+
+	nav {
+		float: none;
+	}
+
 }
