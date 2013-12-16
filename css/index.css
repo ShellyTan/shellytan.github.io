@@ -79,7 +79,7 @@ footer div div a {
 	position: fixed;
 	width: 250px;
 	top: 0;
-	left: 30px;
+	right: 30px;
 	box-shadow: 5px 5px 5px #a9a9a9;
 
 }
@@ -103,6 +103,15 @@ footer div div a {
 	color: #2f4f4f;
 }
 
+#hide {
+	position: fixed;
+	top: 10px;
+	right: 50px;
+	font-size: 25px;
+}
+#hide:hover {
+	color: #000000;
+}
 
 @media (max-width: 1024px) {
   h1 {
