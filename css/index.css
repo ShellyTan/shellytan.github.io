@@ -17,6 +17,10 @@ nav a {
 	font-size: 16px;
 }
 
+nav a:hover {
+	color: #6d8383;
+}
+
 a {
 	color: #000000;
 }
