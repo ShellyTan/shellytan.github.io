@@ -89,6 +89,21 @@ footer div div a {
 
 }
 
+/* Contact Page Styling */
+
+.contact-text{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding-top: 30px;
+	padding-left: 15px;
+}
+
+.contact-text a{
+	color: #2f4f4f;
+}
+
+
 @media (max-width: 1024px) {
   h1 {
     font-size: 5.5em;
