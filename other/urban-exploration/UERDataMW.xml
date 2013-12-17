@@ -1,0 +1,199 @@
+<ROOT>
+
+<PLACE>Belle Isle Aquarium</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.33652,-82.985235</COORDINATES>
+<DESCRIPTION>At the time of its closure in 2004, the Belle Isle Aquarium was America’s oldest, having been in near-continuous operation for 101 years. The Albert Kahn-designed aquarium opened to the public in 1904 along with the nearby Anna Scripps Whitcomb conservatory. It consisted of a long, green tile corridor with 60 fresh and saltwater exhibits holding nearly 1,500 fish.</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Check it out if you're nearby.</REC>
+<HAZARDS>None</HAZARDS>
+<SECURITY>24-hour guard, locked gates</SECURITY>
+<EQUIPMENT>Flashlight</EQUIPMENT>
+
+<PLACE>Chicago Insane Asylum</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 41.741603,-87.635193</COORDINATES>
+<DESCRIPTION>The site consists of two buildings, one of which is in considerably better condition than the other. In one building, a kitchen burned down and left pretty spooky burn marks on the bricks of the wall.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, air quality</HAZARDS>
+<SECURITY>Fences, locked gates, welded doors, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, gloves, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Chippewa Lake Park</PLACE>
+<TYPE>Type: Other (Amusement Park)</TYPE>
+<COORDINATES>Coordinates: 41.063526,-81.901955</COORDINATES>
+<DESCRIPTION>Chippewa Lake Park was built in the late 1870's. Before it was an amusement park, the grounds were used for picnics dating back to the 1840's. The park's first owner was Edward Andrews, and the park was called Andrew's Pleasure Grounds. The park was used for picnics, dancing, holiday fireworks, and so forth. The park closed in 1978, a full 100 years after it opened, because the park wansn't making enough money to still operate. Most of the rides are still there, but they're all engulfed in the wildlife around it. Some of the buildings have collapsed, others destroyed by fire. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Rust, unsafe flooring</HAZARDS>
+<SECURITY>Fences, barbed wire, locked gates</SECURITY>
+<EQUIPMENT>Long pants/sleeves</EQUIPMENT>
+
+<PLACE>Cold War Radar Bunkers</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.309776,-90.357195</COORDINATES>
+<DESCRIPTION>Off Blackjack Road, in Galena, Illinois, sits an obscure relic of the Cold War missile defense network. This radar station was originally tasked with monitoring airspace to detect incoming threats and relay with other radar sites throughout the nation. When the United States began disarming the nukes, these radar stations were decommissioned and scrapped. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Air quality, rust</HAZARDS>
+<SECURITY>Security gate prevents you from driving up to it</SECURITY>
+<EQUIPMENT>Gloves, long sleeves/pants, flashlight, towelettes</EQUIPMENT>
+
+<PLACE>Grand Army of the Republic Building</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.334978,-83.054999</COORDINATES>
+<DESCRIPTION>The Grand Army of the Republic Building, or GAR as it's known, is a triangular castle located on the corner of Grand River and Cass streets. Built in 1900 for veterans of the Civil War, the building was a fixture of downtown life until it was closed and abadnoned in 1982. It is a Gothic-style castle complete with turrets and a ballroom on the top floor.</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Water, unsafe flooring</HAZARDS>
+<SECURITY>24-hour guards, locked gates, welded door</SECURITY>
+<EQUIPMENT>Flashlight, gloves, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Hill City Trains</PLACE>
+<TYPE>Type: Other (Trains)</TYPE>
+<COORDINATES>Coordinates:  43.931176,-103.573861</COORDINATES>
+<DESCRIPTION>Some very interesting old passenger cars, with well preserved exteriors. The interiors... Less well preserved. Also, Cabooses, ancient engines, and boarded up boxcars. The not entirely inaccessible boarded up cards are still in good condition inside as well.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring</HAZARDS>
+<SECURITY>Wooden boarding</SECURITY>
+<EQUIPMENT>None</EQUIPMENT>
+
+<PLACE>McLouth Steel</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.159479,-83.172174</COORDINATES>
+<DESCRIPTION>In 1948, McLouth Steel started its $100 million expansion program by purchasing riverfront property in Trenton, MI. Construction on the first major construction program was started soon afterward. The site was laid out and four sixty ton electric arc furnaces were installed. Soaking pits, a blooming mill, a Steckel mill, an down-coiler and finishing equipment were installed. McLouth was soon established as a growing factor in the marketplace.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, flooding, water, air quality</HAZARDS>
+<SECURITY>Fences, part-time guard</SECURITY>
+<EQUIPMENT>Gloves, flashlight, rope, harness, breathing mask, head protection, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Northern Pacific Ore Dock</PLACE>
+<TYPE>Type: Other (Outdoors)</TYPE>
+<COORDINATES>Coordinates: 46.70138,-92.03161</COORDINATES>
+<DESCRIPTION>A long abandoned ore dock severed from the tracks long ago. It stretches almost half a mile from end to end and is quite high. The whole place is in terrible condition, but it's good for photos!</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring, water</HAZARDS>
+<SECURITY>Fences, barbed wire, part-time guard, locked gates, welded doors</SECURITY>
+<EQUIPMENT>Gloves, long sleeves/pants</EQUIPMENT>
+
+<PLACE>Sanger</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 47.179854,-100.99504</COORDINATES>
+<DESCRIPTION>Sanger was founded in 1879 by the brothers George and Charles Sanger. Sanger was the county seat until 1902 when it was replaced by Center. The current site of Sanger was platted in 1902 and reached a peak population of 100 by 1920. By 1985 the population had dropped to 3. Currently, the townsite is abandoned. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Unsafe flooring, rust, rust</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Long pants/sleeves, gloves</EQUIPMENT>
+
+<PLACE>Star Brewery</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.499488,-90.654309</COORDINATES>
+<DESCRIPTION>Dubuque Star was established by Joseph Rhomberg in 1898. Until the beginning of Prohibition, the brewery produced Dubuque Star beer. As with many other breweries, the Dubuque Star brewery was forced to close down. Before Prohibition, there were 138 breweries in the state, but afterwards Dubuque Star was the only small brewery left in the state.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Unsafe flooring, rust</HAZARDS>
+<SECURITY>Locked doors, wooden boarding</SECURITY>
+<EQUIPMENT>Long pants/sleeves</EQUIPMENT>
+
+<PLACE>Studebaker Plant</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 41.668456,-86.255851</COORDINATES>
+<DESCRIPTION>Built in the late 1890s, this building had many uses over the years. It first housed one of the original Studebaker wooden wagon assembly lines. In 1922, the building was renovated for making automobiles. Later, part of the company's Athletic Club (which included a boxing ring, basketball court, and archery and shooting ranges) was on the fourth floor , until it was cleared out to assemble airplane parts during World War II. After the war, cars once again rolled out until the company closed in 1963, at which time Building #48 was used as a warehouse for Transwestern Investments, Inc.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Fire damage, unsafe flooring</HAZARDS>
+<SECURITY>Fences, welded doors, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, gloves, long pants/sleeves, boots</EQUIPMENT>
+
+<PLACE>The Quarry</PLACE>
+<TYPE>Type: Tunnel</TYPE>
+<COORDINATES>Coordinates: 44.979735,-93.251653</COORDINATES>
+<DESCRIPTION>The tunnels known only as "The Quarry" have long been though to be one of the better sites in the Twin Cities. Their extent and maze-like qualities make for great place to explore. Interesting features include sand/silica mines (active and abandoned), abandoned power and utility tunnels, drains, sewers, smuggling tunnels, prohibition caves, abandoned buildings and open-pit quarries. .</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Air quality, unsafe flooring, water</HAZARDS>
+<SECURITY>Fences, barbed wire, dogs, 24-hour guard, locked gates, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, rope, harness, breathing mask, gloves, head protection, long pants/sleeves, towelettes</EQUIPMENT>
+
+<PLACE>Trumbull Military Base</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 41.219485,-80.562347</COORDINATES>
+<DESCRIPTION>Not much is known about this location, other than it was a auxiliary military base at one point. Apparently there was a UFO sighting there back in 1994, after which one of the towers was demolished. There are perhaps a dozen buildings spread out over a few acres, including barracks, garages, and houses.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, toxic wastes (mainly in underground storage tanks)</HAZARDS>
+<SECURITY>Fences, barbed wire, razor wire, locked gates, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, gloves, long pants/sleeves, boots</EQUIPMENT>
+
+<IMAGES>Locations MW/Belle/1.jpg</IMAGES>
+<IMAGES>Locations MW/Belle/2.jpg</IMAGES>
+<IMAGES>Locations MW/Belle/3.jpg</IMAGES>
+<IMAGES>Locations MW/Belle/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Chi/1.jpg</IMAGES>
+<IMAGES>Locations MW/Chi/2.jpg</IMAGES>
+<IMAGES>Locations MW/Chi/3.jpg</IMAGES>
+<IMAGES>Locations MW/Chi/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Chipp/1.jpg</IMAGES>
+<IMAGES>Locations MW/Chipp/2.jpg</IMAGES>
+<IMAGES>Locations MW/Chipp/3.jpg</IMAGES>
+<IMAGES>Locations MW/Chipp/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Cold/1.jpg</IMAGES>
+<IMAGES>Locations MW/Cold/2.jpg</IMAGES>
+<IMAGES>Locations MW/Cold/3.jpg</IMAGES>
+<IMAGES>Locations MW/Cold/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Grand/1.jpg</IMAGES>
+<IMAGES>Locations MW/Grand/2.jpg</IMAGES>
+<IMAGES>Locations MW/Grand/3.jpg</IMAGES>
+<IMAGES>Locations MW/Grand/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Hill/1.jpg</IMAGES>
+<IMAGES>Locations MW/Hill/2.jpg</IMAGES>
+<IMAGES>Locations MW/Hill/3.jpg</IMAGES>
+<IMAGES>Locations MW/Hill/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/McLouth/1.jpg</IMAGES>
+<IMAGES>Locations MW/McLouth/2.jpg</IMAGES>
+<IMAGES>Locations MW/McLouth/3.jpg</IMAGES>
+<IMAGES>Locations MW/McLouth/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/North/1.jpg</IMAGES>
+<IMAGES>Locations MW/North/2.jpg</IMAGES>
+<IMAGES>Locations MW/North/3.jpg</IMAGES>
+<IMAGES>Locations MW/North/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Sanger/1.jpg</IMAGES>
+<IMAGES>Locations MW/Sanger/2.jpg</IMAGES>
+<IMAGES>Locations MW/Sanger/3.jpg</IMAGES>
+<IMAGES>Locations MW/Sanger/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Star/1.jpg</IMAGES>
+<IMAGES>Locations MW/Star/2.jpg</IMAGES>
+<IMAGES>Locations MW/Star/3.jpg</IMAGES>
+<IMAGES>Locations MW/Star/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Stude/1.jpg</IMAGES>
+<IMAGES>Locations MW/Stude/2.jpg</IMAGES>
+<IMAGES>Locations MW/Stude/3.jpg</IMAGES>
+<IMAGES>Locations MW/Stude/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/The Quarry/1.jpg</IMAGES>
+<IMAGES>Locations MW/The Quarry/2.jpg</IMAGES>
+<IMAGES>Locations MW/The Quarry/3.jpg</IMAGES>
+<IMAGES>Locations MW/The Quarry/4.jpg</IMAGES>
+
+<IMAGES>Locations MW/Trumbull/1.jpg</IMAGES>
+<IMAGES>Locations MW/Trumbull/2.jpg</IMAGES>
+<IMAGES>Locations MW/Trumbull/3.jpg</IMAGES>
+<IMAGES>Locations MW/Trumbull/4.jpg</IMAGES>
+
+
+</ROOT>

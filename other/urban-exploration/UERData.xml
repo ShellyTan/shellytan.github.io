@@ -1,0 +1,200 @@
+<ROOT>
+
+<PLACE>Albert P. Brewer Developmental Center</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 30.633577,-88.22476</COORDINATES>
+<DESCRIPTION>Brewer was closed due to the poor conditions of the buildings. After years of complaints that residents and visitors had to weave past buckets placed in hallways to catch rain water, an engineering firm inspected the facility and found that 14 of the 15 buildings on the campus presented a "hazard to human life". It was later estimated that the cost to renovate or remodel the buildings would be between $6 to $8 million -- money that the financially-strapped department did not have.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Rust, flooding, gang activity</HAZARDS>
+<SECURITY>Fences, part-time guard</SECURITY>
+<EQUIPMENT>Flashlight, binoculars, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Baxter Park Drain</PLACE>
+<TYPE>Type: Drain</TYPE>
+<COORDINATES>Coordinates: 35.213333,-80.839763</COORDINATES>
+<DESCRIPTION>This still active drain goes quite deep at points. There are many junction rooms and pipe changes. A hole in the ceiling leads to the basement of a nearby building. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring, flooding, water, air quality</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves, boots</EQUIPMENT>
+
+<PLACE>Bellemont Mill</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 36.027792,-79.440165</COORDINATES>
+<DESCRIPTION>The site was a textile or furniture mill built around 1875. It sits along the bank of the Big Alamance Creek. A small town sprung up around it. When the mill closed around 1949, the town pretty much died. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, flooding, air quality</HAZARDS>
+<SECURITY>Fences, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, gloves, head protection, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Bynum Manufacturing Company Mill</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 35.772126,-79.142536</COORDINATES>
+<DESCRIPTION>The town grew up around the mill, which was set on the Haw River. Originally, the company built 14 cotton mill houses available for rent to its employees. As the mill grew, the town grew and became a vibrant community. What's now left after the fire are a few brick and concrete structures with water flowing beneath the main building. A one-lane bridge crosses the river nearby. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, water</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Long pants/sleeves</EQUIPMENT>
+
+<PLACE>Dan River Fabrics</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 36.592135,-79.392743</COORDINATES>
+<DESCRIPTION>This is the original pair of mills owned by the Dan River Fabric Company. The north "Long Mill" original building was completed in 1882. Eventually, the Long Mill reached a size of about 1/4 miles long. In 1909, the south mill "Mill 8" was completed, and a walkway was built across the river to connect them.The mill was closed in the late 1990's and all operations moved to India.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Asbestos, air quality, rust, unsafe flooring, flooding</HAZARDS>
+<SECURITY>Fences, barbed wire, part-time guard, locked gates, welded doors, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, rope, binoculars, gloves, head protection, long pants/sleeves, towelettes</EQUIPMENT>
+
+<PLACE>Fort Wool</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 36.98645,-76.302044</COORDINATES>
+<DESCRIPTION>The island that Fort Wool sits on is man-made. Known as the Rip-Raps, it was created beginning in 1818 on a shoal and is basically a big pile of rocks. The island continued to settle after construction of the fort began in 1826. It was still incomplete at the start of the Civil War. The famous Robert E. Lee began his career as a military engineer, and he took part in the construction of Forts Wool and Monroe. </DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Water</HAZARDS>
+<SECURITY>24 hour guard</SECURITY>
+<EQUIPMENT>Boat, flashlight, gloves, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Ice Service, Inc</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 35.600945,-82.554015</COORDINATES>
+<DESCRIPTION>A former factory site that has since been abandoned. Check out some of the graffiti hidden around the space.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring</HAZARDS>
+<SECURITY>Barbed wire, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, gloves</EQUIPMENT>
+
+<PLACE>Kanawha Valley Building</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 38.350813,-81.63326</COORDINATES>
+<DESCRIPTION>This 20-story high-rise is richly appointed with gray and orange terra cotta trim. It served as headquarters of the Kanawha Valley Bank and occupies the site of the old West Virginia Capitol Building, which burned in 1921. Floors 18-20 are separate penthouse floors. Floor 20 is closed from the public and houses antenna equipment.</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Locks, guards</HAZARDS>
+<SECURITY>24 hour guard, locked gates, welded doors</SECURITY>
+<EQUIPMENT>Flashlight, binoculars, gloves, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Mine Shaft Drain</PLACE>
+<TYPE>Type: Drain</TYPE>
+<COORDINATES>Coordinates: 35.228559,-80.859239</COORDINATES>
+<DESCRIPTION>This still active drain is fairly large with many curves and sharp turns. Sections of it are very old and resembles a mine shaft.  </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring, flooding, water, air quality</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves, boots</EQUIPMENT>
+
+<PLACE>Minister's Treehouse</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 35.983979,-84.994698</COORDINATES>
+<DESCRIPTION>Located in Crossville, Tennessee, the Minister’s House took Horace Burgess 14 years to build around an 80-foot-tall white oak tree, with a diameter of 12 feet. The wooden edifice itself is 97-feet-tall and is supported by six other strong trees that act like natural pillars.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Uneven flooring</HAZARDS>
+<SECURITY>Fences</SECURITY>
+<EQUIPMENT>None</EQUIPMENT>
+
+<PLACE>Piedmont Sanatorium</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 37.192391,-78.174162</COORDINATES>
+<DESCRIPTION>Piedmont Sanatorium was a rest home for tubercular African Americans in Burkeville, Virginia from 1917 to 1965. It was the first facility of its kind ever to be established in the United States. The Sanatorium later became the site of Piedmont Geriatric Hospital.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Unsafe flooring, air quality</HAZARDS>
+<SECURITY>24 hour guard, alarms, cameras, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Sloss Furnaces</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates:  33.520905,-86.791273</COORDINATES>
+<DESCRIPTION>Sloss is an industrial site that was used to extract iron from iron ore. It is about 2 blocks large and was converted to a public park/museum. There's a little something for everyone, from the disused industrial buildings, to large metal tanks and structures, to old rail cars and even a tunnel. The blast furnaces and other structures are at least 8 stories tall. Also, if you are willing to risk life and limb, you can jump the gates and see the non-public parts of the site. You'll need lockpicks and a cutting torch (for the welded doors) to see some other parts.  </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring, water</HAZARDS>
+<SECURITY>Fences, locked gates, welded doors, the general public</SECURITY>
+<EQUIPMENT>Flashlight, binoculars</EQUIPMENT>
+
+<PLACE>Wreck of the Weber W. Sebald</PLACE>
+<TYPE>Type: Other (Boat Wreck)</TYPE>
+<COORDINATES>Coordinates: 38.304922,-81.561855</COORDINATES>
+<DESCRIPTION>According to Way's Steam Towboat Directory, this legendary broken-down boat began its life as a steam-powered sternwheeler in 1926, in Dubuque, Iowa. Originally named the John W. Weeks, the craft was one of three identical towboats built - at a cost of $175,000 each - for the newly formed Upper Mississippi Barge Line. The 130-foot-long, 35-foot-wide steamboats were commissioned in an effort to jump-start commercial barge traffic on the Upper Mississippi River, which had slowed to a trickle since World War I. The boats, in their first 10 years of operation, were instrumental in quadrupling the tonnage of freight shipped on the Upper Mississippi. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, unsafe flooring, flooding, river rats</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Gloves, binoculars, head protection, long pants/sleeves</EQUIPMENT>
+
+
+<IMAGES>Locations/Albert/1.jpg</IMAGES>
+<IMAGES>Locations/Albert/2.jpg</IMAGES>
+<IMAGES>Locations/Albert/3.jpg</IMAGES>
+<IMAGES>Locations/Albert/4.jpg</IMAGES>
+
+<IMAGES>Locations/Baxter/1.jpg</IMAGES>
+<IMAGES>Locations/Baxter/2.jpg</IMAGES>
+<IMAGES>Locations/Baxter/3.jpg</IMAGES>
+<IMAGES>Locations/Baxter/4.jpg</IMAGES>
+
+<IMAGES>Locations/Bellemont/1.jpg</IMAGES>
+<IMAGES>Locations/Bellemont/2.jpg</IMAGES>
+<IMAGES>Locations/Bellemont/3.jpg</IMAGES>
+<IMAGES>Locations/Bellemont/4.jpg</IMAGES>
+
+<IMAGES>Locations/Bynum/1.jpg</IMAGES>
+<IMAGES>Locations/Bynum/2.jpg</IMAGES>
+<IMAGES>Locations/Bynum/3.jpg</IMAGES>
+<IMAGES>Locations/Bynum/4.jpg</IMAGES>
+
+<IMAGES>Locations/Dan River/1.jpg</IMAGES>
+<IMAGES>Locations/Dan River/2.jpg</IMAGES>
+<IMAGES>Locations/Dan River/3.jpg</IMAGES>
+<IMAGES>Locations/Dan River/4.jpg</IMAGES>
+
+<IMAGES>Locations/Fort Wool/1.jpg</IMAGES>
+<IMAGES>Locations/Fort Wool/2.jpg</IMAGES>
+<IMAGES>Locations/Fort Wool/3.jpg</IMAGES>
+<IMAGES>Locations/Fort Wool/4.jpg</IMAGES>
+
+<IMAGES>Locations/Ice Service/1.jpg</IMAGES>
+<IMAGES>Locations/Ice Service/2.jpg</IMAGES>
+<IMAGES>Locations/Ice Service/3.jpg</IMAGES>
+<IMAGES>Locations/Ice Service/4.jpg</IMAGES>
+
+<IMAGES>Locations/Kanawha/1.jpg</IMAGES>
+<IMAGES>Locations/Kanawha/2.jpg</IMAGES>
+<IMAGES>Locations/Kanawha/3.jpg</IMAGES>
+<IMAGES>Locations/Kanawha/4.jpg</IMAGES>
+
+<IMAGES>Locations/Mine Shaft/1.jpg</IMAGES>
+<IMAGES>Locations/Mine Shaft/2.jpg</IMAGES>
+<IMAGES>Locations/Mine Shaft/3.jpg</IMAGES>
+<IMAGES>Locations/Mine Shaft/4.jpg</IMAGES>
+
+<IMAGES>Locations/Minister's/1.jpg</IMAGES>
+<IMAGES>Locations/Minister's/2.jpg</IMAGES>
+<IMAGES>Locations/Minister's/3.jpg</IMAGES>
+<IMAGES>Locations/Minister's/4.jpg</IMAGES>
+
+<IMAGES>Locations/Piedmont/1.jpg</IMAGES>
+<IMAGES>Locations/Piedmont/2.jpg</IMAGES>
+<IMAGES>Locations/Piedmont/3.jpg</IMAGES>
+<IMAGES>Locations/Piedmont/4.jpg</IMAGES>
+
+<IMAGES>Locations/Sloss/1.jpg</IMAGES>
+<IMAGES>Locations/Sloss/2.jpg</IMAGES>
+<IMAGES>Locations/Sloss/3.jpg</IMAGES>
+<IMAGES>Locations/Sloss/4.jpg</IMAGES>
+
+<IMAGES>Locations/Wreck/1.jpg</IMAGES>
+<IMAGES>Locations/Wreck/2.jpg</IMAGES>
+<IMAGES>Locations/Wreck/3.jpg</IMAGES>
+<IMAGES>Locations/Wreck/4.jpg</IMAGES>
+
+
+</ROOT>

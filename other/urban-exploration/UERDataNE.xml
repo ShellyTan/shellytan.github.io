@@ -1,0 +1,200 @@
+<ROOT>
+
+<PLACE>Amtrak Turboliner</PLACE>
+<TYPE>Type: Other (Abandoned train)</TYPE>
+<COORDINATES>Coordinates: 42.880764,-73.928609</COORDINATES>
+<DESCRIPTION>An abandoned trainset that has been sealed up and locked. This particular design is very rare. For one thing, it has what would be the business class section in the back half of the engine cab.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>None</HAZARDS>
+<SECURITY>Locked gates, welded doors, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Bare Cove Park Annex</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.226833,-70.852375</COORDINATES>
+<DESCRIPTION>This site is a former munitions depot and missile factory. It once held nuclear missiles in its bunkers. Most of the buildings have been demolished, but there are still plenty of old rails, roads and bunkers on the property.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, barbed wire</HAZARDS>
+<SECURITY>Fences, barbed wire, local police</SECURITY>
+<EQUIPMENT>Long pants/sleeves</EQUIPMENT>
+
+<PLACE>Battery Steele Bunker</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 43.655992,-70.195544</COORDINATES>
+<DESCRIPTION>Battery Steele Bunker is approximately 600 ft. long with two 16-inch gun emplacements.The bunker was used by the Army as part of the Portland Harbor Defenses. The bunker and gun emplacements have not been utilized subsequent to DOD use. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby.</REC>
+<HAZARDS>Steep drops/falling hazards</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Flashlight</EQUIPMENT>
+
+<PLACE>Coleco Warehouse</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 42.939852,-74.184709</COORDINATES>
+<DESCRIPTION>A year or so ago, this former toy-factory warehouse was the victim of attempted arson. Entry into the site is difficult; there are motion sensors and dogs that have been trained to radio volunteer firemen.</DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, flooding, water, air quality</HAZARDS>
+<SECURITY>Fences, barbed wire, razor wire, 24-hour guards, locked gates, welded door, wooden boarding, motion sensor, trained dogs</SECURITY>
+<EQUIPMENT>Flashlight, gloves, rope, harness, breathing mask, long pants/sleeves, welder. Flash bang grenades recommended for evading security.</EQUIPMENT>
+
+<PLACE>Delco Ruins</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 43.129116,-77.662177</COORDINATES>
+<DESCRIPTION>After Delco closed, a number of other companies occupied this complex--Sykes, Datatronics, etc. Then the structure was rented to many different tennants for storage before being abandoned. A couple of locals started a fire that destroyed about two-thirds of the complex in 2003.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring</HAZARDS>
+<SECURITY>Fences, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves, boots</EQUIPMENT>
+
+<PLACE>Empire Industries Mill</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 41.969552,-71.356544</COORDINATES>
+<DESCRIPTION>This building was once home to the Webster Silver Company of North Attleboro. When that company abandoned the property back in the late 1970's, it appears (from evidence of former employee check stubs on the second floor) that a company called Empire Industries moved in. Although it is uncertain what Empire did, it is possible that it was a button manufacturing company, or perhaps a plastics manufacturing company, depending on how one interprets the artifacts found throughout the building. </DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, flooding, air quality</HAZARDS>
+<SECURITY>Dogs, wooden boarding, local police</SECURITY>
+<EQUIPMENT>Flashlight, breathing mask, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Holmesburg Prison</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 39.958814,-75.210612</COORDINATES>
+<DESCRIPTION>Large stone walls surround the complex and a "hub and spoke" layout for the prison blocks inside the main walls. Historical prominence as it was built in 1896 and shares some very strange anomylies in building technique and design of prisons from that era. </DESCRIPTION>
+<ACCESS>Difficult</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Barbed wire</HAZARDS>
+<SECURITY>Barbed wire, razor wire, 24-hour guard, locked gates, welded doors, wooden boarding, 25-30 ft stone wall</SECURITY>
+<EQUIPMENT>Gloves, long sleeves/pants, flashlight, boots</EQUIPMENT>
+
+<PLACE>Livermore Falls Pulp Mill</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 43.784743,-71.667574</COORDINATES>
+<DESCRIPTION>A shell of a once-impressive paper mill, the ruins are now coated in slime and rust. Among its noteworthy features are a central area that nature's reclaimed, surrounded by walls reminiscent of a castle's crenelations. It is easily accessed by anyone with a little bit of balance and quite worth a trip down to the substructure.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Rust, water</HAZARDS>
+<SECURITY>None</SECURITY>
+<EQUIPMENT>Flashlight</EQUIPMENT>
+
+<PLACE>New York City Farm Colony</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 40.593764,-74.135363</COORDINATES>
+<DESCRIPTION>In 1902 a predecessor charitable institution, the Richmond County Poor Farm, was renamed The New York City Farm Colony. It has an architectural styling similar to the asylums of the area, while still maintaining a very "old-world" feel. There is a lot of brick and mason work, as well as big porches. </DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring</HAZARDS>
+<SECURITY>Fences, bricked-up windows and doors</SECURITY>
+<EQUIPMENT>Flashlight, gloves, long pants/sleeves, towelettes</EQUIPMENT>
+
+<PLACE>Old Newgate Prison</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 41.959618,-72.743998</COORDINATES>
+<DESCRIPTION>Old Newgate Prison was a Colonial American prison in what is now East Granby, Connecticut. The prison was originally a copper mine, opened in 1705, and is believed to be the first copper mine in America. After mining operations proved unprofitable, the colony of Connecticut converted it to a prison, like its London namesake Newgate Prison.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Air quality, rust, unsafe flooring, flooding, collapsing walls</HAZARDS>
+<SECURITY>Fences, barbed wire, part-time guard, locked gates, welded doors, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, rope, gloves, head protection, long pants/sleeves</EQUIPMENT>
+
+<PLACE>Ristorante Della Trattoria</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 40.434235,-80.011225</COORDINATES>
+<DESCRIPTION>Perched atop a high ridge across one of the two large rivers from downtown, this site has an incredible view of the city. This abandoned building looks like a small school from the street; however, the inside indicates that the building was a very nice, upscale restaurant. Awesome view of the city.</DESCRIPTION>
+<ACCESS>Easy</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Unsafe flooring, rust, potential squatters</HAZARDS>
+<SECURITY>Barbed wire, wooden boarding</SECURITY>
+<EQUIPMENT>Flashlight, long pants/sleeves, gloves</EQUIPMENT>
+
+<PLACE>The Lost Marina</PLACE>
+<TYPE>Type: Other (Outdoors)</TYPE>
+<COORDINATES>Coordinates:  40.410894,-74.410813</COORDINATES>
+<DESCRIPTION>Home to the Mary Murray Ferry and a yacht alleged to have been owned by the Shah of Iran, this marina has been closed and has numerous abandoned items strewn about the property.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Check it out if you're nearby</REC>
+<HAZARDS>Asbestos, rust, unsafe flooring, flooding</HAZARDS>
+<SECURITY>Fences, owner lives on property</SECURITY>
+<EQUIPMENT>Flashlight, rope, gloves, long sleeves/pants</EQUIPMENT>
+
+<PLACE>Westport Generating Station</PLACE>
+<TYPE>Type: Building</TYPE>
+<COORDINATES>Coordinates: 39.264312,-76.629601</COORDINATES>
+<DESCRIPTION>At the time of its construction, this site was the world's largest reinforced concrete power station. It was also used for the filming of "12 Monkeys." The "Engineering Room" in which Cole was interrogated is the No.4 Turbine Basement of the Westport Power Plant.</DESCRIPTION>
+<ACCESS>Moderate</ACCESS>
+<REC>Worth the trip</REC>
+<HAZARDS>Rust, unsafe flooring, collapsing structures</HAZARDS>
+<SECURITY>Fences</SECURITY>
+<EQUIPMENT>Gloves, ladder, flashlight, long pants/sleeves</EQUIPMENT>
+
+
+<IMAGES>Locations NE/Amtrak/1.jpg</IMAGES>
+<IMAGES>Locations NE/Amtrak/2.jpg</IMAGES>
+<IMAGES>Locations NE/Amtrak/3.jpg</IMAGES>
+<IMAGES>Locations NE/Amtrak/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Bare Cove/1.jpg</IMAGES>
+<IMAGES>Locations NE/Bare Cove/2.jpg</IMAGES>
+<IMAGES>Locations NE/Bare Cove/3.jpg</IMAGES>
+<IMAGES>Locations NE/Bare Cove/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Battery Steele/1.jpg</IMAGES>
+<IMAGES>Locations NE/Battery Steele/2.jpg</IMAGES>
+<IMAGES>Locations NE/Battery Steele/3.jpg</IMAGES>
+<IMAGES>Locations NE/Battery Steele/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Coleco/1.jpg</IMAGES>
+<IMAGES>Locations NE/Coleco/2.jpg</IMAGES>
+<IMAGES>Locations NE/Coleco/3.jpg</IMAGES>
+<IMAGES>Locations NE/Coleco/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Delco/1.jpg</IMAGES>
+<IMAGES>Locations NE/Delco/2.jpg</IMAGES>
+<IMAGES>Locations NE/Delco/3.jpg</IMAGES>
+<IMAGES>Locations NE/Delco/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Empire/1.jpg</IMAGES>
+<IMAGES>Locations NE/Empire/2.jpg</IMAGES>
+<IMAGES>Locations NE/Empire/3.jpg</IMAGES>
+<IMAGES>Locations NE/Empire/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Holmesburg/1.jpg</IMAGES>
+<IMAGES>Locations NE/Holmesburg/2.jpg</IMAGES>
+<IMAGES>Locations NE/Holmesburg/3.jpg</IMAGES>
+<IMAGES>Locations NE/Holmesburg/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Livermore/1.jpg</IMAGES>
+<IMAGES>Locations NE/Livermore/2.jpg</IMAGES>
+<IMAGES>Locations NE/Livermore/3.jpg</IMAGES>
+<IMAGES>Locations NE/Livermore/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/NYC Farm/1.jpg</IMAGES>
+<IMAGES>Locations NE/NYC Farm/2.jpg</IMAGES>
+<IMAGES>Locations NE/NYC Farm/3.jpg</IMAGES>
+<IMAGES>Locations NE/NYC Farm/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Old Newgate/1.jpg</IMAGES>
+<IMAGES>Locations NE/Old Newgate/2.jpg</IMAGES>
+<IMAGES>Locations NE/Old Newgate/3.jpg</IMAGES>
+<IMAGES>Locations NE/Old Newgate/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Ristorante/1.jpg</IMAGES>
+<IMAGES>Locations NE/Ristorante/2.jpg</IMAGES>
+<IMAGES>Locations NE/Ristorante/3.jpg</IMAGES>
+<IMAGES>Locations NE/Ristorante/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/The Lost/1.jpg</IMAGES>
+<IMAGES>Locations NE/The Lost/2.jpg</IMAGES>
+<IMAGES>Locations NE/The Lost/3.jpg</IMAGES>
+<IMAGES>Locations NE/The Lost/4.jpg</IMAGES>
+
+<IMAGES>Locations NE/Westport/1.jpg</IMAGES>
+<IMAGES>Locations NE/Westport/2.jpg</IMAGES>
+<IMAGES>Locations NE/Westport/3.jpg</IMAGES>
+<IMAGES>Locations NE/Westport/4.jpg</IMAGES>
+
+
+</ROOT>
