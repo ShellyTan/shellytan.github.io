@@ -1,9 +1,10 @@
 body {
 	background: #eeeeee;
+	font-family: 'PT Sans', helvetica, arial, sans-serif;
 }
 
 nav {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', helvetica, arial, sans-serif;
 	float: right;
 	margin-top: 50px;
 }
@@ -31,7 +32,7 @@ header div img {
 	width: 80px;
 }
 
-h1, h4 {
+h1, h2 {
 	font-family: 'Didot', 'GFS Didot', serif;
 	font-size: 7em;
 	text-transform: uppercase;
@@ -39,15 +40,13 @@ h1, h4 {
 	color: #000000;
 }
 
-h4 {
+h2 {
 	font-size: 4em;
 }
 
 p {
-	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.5em;
-	padding-top: 30px;
 }
 
 /*Slider on Homepage*/
@@ -96,11 +95,67 @@ footer div div img:hover {
 	color: #2f4f4f;
 }
 
+
+/* Portfolio Page*/
+
+.selected-nav {
+	text-decoration: underline;
+}
+
+#portfolio-nav {
+	float: none;
+	text-align: center;
+	margin: 0 auto 50px auto;
+}
+
+#portfolio-nav a, .portfolio-code-wrapper a{
+	color: #436060;
+}
+
+.slide a:hover {
+	color: #6d8383;
+}
+
+.portfolio-code-wrapper {
+	border-style: dotted;
+	border-width: 0 0 1px 0;
+	border-color: #A8A8A8;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.code-info-wrapper h3, .code-info-wrapper h4 {
+	font-family: 'PT Sans', helvetica, arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 0;
+	display: inline;
+}
+
+.code-info-wrapper h4 {
+	font-size: 18px;
+	color: #A8A8A8;
+}
+
+.code-info-wrapper .skills {
+	font-size: 14px;
+	font-style: italic;
+	opacity: 0.8;
+	margin-bottom: 30px;
+}
+
+.code-image-wrapper img {
+	width: 100%;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #000000;
+}
+
 /*Construction Banner */
 
 #construction {
 	background-color: #2f4f4f;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', helvetica, arial, sans-serif;
 	color: white;
 	text-transform: uppercase;
 	padding: 100px 20px 20px 20px;
@@ -133,7 +188,13 @@ footer div div img:hover {
 	color: #2f4f4f;
 }*/
 
+.contact-text a {
+	color: #436060;
+}
 
+.contact-text a:hover {
+	color: #6d8383;
+}
 
 /* About Page Styling*/
 
@@ -147,6 +208,11 @@ footer div div img:hover {
 
 #about-text p a {
 	font-weight: bold;
+	color: #436060;
+}
+
+#about-text p a:hover {
+	color: #6d8383;
 }
 
 
@@ -156,6 +222,21 @@ footer div div img:hover {
   h1 {
     font-size: 5.5em;
   }
+}
+
+@media (max-width: 992px) {
+	
+	.code-info-wrapper p {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	
+	.code-info-wrapper h3 {
+		margin-top: 30px;
+	}
 }
 
 @media (max-width: 480px) {
