@@ -58,6 +58,7 @@ p {
 .slide a:hover {
 	color: #6d8383;
 }
+
 .header-wrapper, .footer-wrapper {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -98,6 +99,8 @@ footer div div img:hover {
 
 /* Portfolio Page*/
 
+
+/*Portfolio Page Nav*/
 .selected-nav {
 	font-weight: bold;
 	border-bottom-width: 1px;
@@ -124,10 +127,21 @@ footer div div img:hover {
 	cursor: pointer;
 }
 
-.slide a:hover {
-	color: #6d8383;
+/* Portfolio - Graphics & Print Section */
+#graphic-section {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
+#graphic-section a img {
+	margin: 15px;
+	display: inline;
+}
+
+/* Portfolio - Code Section*/
 .portfolio-code-wrapper {
 	border-style: dotted;
 	border-width: 0 0 1px 0;
@@ -244,9 +258,10 @@ footer div div img:hover {
 
 @media (max-width: 767px) {
 	
-	.code-info-wrapper h3 {
+	.code-info-wrapper {
 		margin-top: 30px;
 	}
+
 }
 
 @media (max-width: 480px) {
