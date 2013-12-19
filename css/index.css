@@ -99,7 +99,9 @@ footer div div img:hover {
 /* Portfolio Page*/
 
 .selected-nav {
-	text-decoration: underline;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
 }
 
 #portfolio-nav {
@@ -108,8 +110,18 @@ footer div div img:hover {
 	margin: 0 auto 50px auto;
 }
 
-#portfolio-nav a, .portfolio-code-wrapper a{
+#portfolio-nav p, .portfolio-code-wrapper a{
 	color: #436060;
+}
+
+#portfolio-nav p {
+	display: inline;
+	padding-bottom: 10px;
+}
+
+#portfolio-nav p:hover {
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 .slide a:hover {
@@ -214,8 +226,6 @@ footer div div img:hover {
 #about-text p a:hover {
 	color: #6d8383;
 }
-
-
 
 /*Media Queries*/
 @media (max-width: 1024px) {
