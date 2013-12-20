@@ -1,17 +1,30 @@
+var $body = $('body');
 var $sections = $('.portfolio-sections');
+var $portfolio_nav = $('#portfolio-nav');
 var $code_section = $('#code-section');
 var $graphic_section = $('#graphic-section');
 var $studio_section = $('#studio-section');
+var $back_to_top = $('.back-to-top');
 
 var section_index = [ $code_section , $graphic_section , $studio_section ];
 
+var on_page_scroll = function() {
+
+    if(window.pageYOffset > 800) {
+        $back_to_top.fadeIn(1000);
+    } else {
+        $back_to_top.fadeOut(1000);
+    }
+};
+
+var back_to_top = function() {
+    $body.scrollTo($portfolio_nav, { duration:450 }, 'y');
+    return false;
+};
 
 $( document ).ready(function() {
 
-	$('#hide').click(function() {
-	    $('#construction').hide();
-	});
-
+	$back_to_top.hide();
 	$graphic_section.hide();
 	$studio_section.hide();
 
@@ -37,6 +50,13 @@ $( document ).ready(function() {
 			
 		}
 	});
+
+
+    $(window).on('scroll', on_page_scroll);
+
+	$back_to_top.on('click', back_to_top);
+
+	
 
 
 });
