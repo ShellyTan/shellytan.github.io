@@ -128,7 +128,7 @@ footer div div img:hover {
 }
 
 /* Portfolio - Graphics & Print Section */
-#graphic-section {
+#graphic-section, #studio-section {
 	width: 100%;
 	height: auto;
 	margin-left: auto;
@@ -136,7 +136,7 @@ footer div div img:hover {
 	text-align: center;
 }
 
-#graphic-section a img {
+#graphic-section a img, #studio-section a img {
 	margin: 15px;
 	display: inline;
 }
@@ -269,9 +269,11 @@ footer div div img:hover {
 		font-size: 4em;
 	}
 
-	h4 {
+	h2 {
+		font-size: 3em;
 		text-align: center;
 	}
+
 	header div img {
 		float: none;
 		text-align: center;
