@@ -283,6 +283,7 @@ footer div div img:hover {
 }
 
 @media (max-width: 480px) {
+
 	h1 {
 		font-size: 4em;
 	}
@@ -302,7 +303,7 @@ footer div div img:hover {
 	}
 
 	#sliders {
-		width: 315px;
+		width: 300px;
 	}
 
 	#portfolio-nav p {
