@@ -244,6 +244,7 @@ footer div div img:hover {
 
 #about-pic {
 	width: 100%;
+	border: #000 7px solid;
 }
 
 #about-text p {
