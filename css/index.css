@@ -251,7 +251,7 @@ footer div div img:hover {
 	padding-top: 15px;
 }
 
-#about-text p a, #portfolio-text p a {
+#about-text p a, #about-text ul li a, #portfolio-text p a {
 	font-weight: bold;
 	color: #436060;
 }
