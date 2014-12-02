@@ -31,7 +31,7 @@ $( document ).ready(function() {
 
 	$('#portfolio-nav p').on("click", function(){
 
-		if ($(this).className == 'selected-nav') {
+		if ($(this).className === 'selected-nav') {
 			return false;
 		} else {
 			
@@ -40,23 +40,15 @@ $( document ).ready(function() {
 			$(this).addClass('selected-nav');
 
 			// Change which section of portfolio is shown
-			var nav_index = $(this).parent('#portfolio-nav').find('p').index($(this));
-			
-			var visible_section = section_index[nav_index];
+			var nav_index = $(this).data('section');
 
 			$sections.hide();
-			visible_section.show();
-
-			
+			$(nav_index).show();
 		}
 	});
-
 
     $(window).on('scroll', on_page_scroll);
 
 	$back_to_top.on('click', back_to_top);
-
-	
-
 
 });
