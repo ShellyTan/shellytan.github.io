@@ -287,6 +287,10 @@ footer div div img:hover {
 span.small{
 	color: #000;
 }
+p.center a{
+	color: #436060;
+	font-weight: bold;
+}
 /*Media Queries*/
 @media (max-width: 1024px) {
   h1 {
