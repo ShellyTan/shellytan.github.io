@@ -51,4 +51,7 @@ $( document ).ready(function() {
 
 	$back_to_top.on('click', back_to_top);
 
+	$('.gifs-container img').lazyload({
+	    threshold : 200
+	});
 });
