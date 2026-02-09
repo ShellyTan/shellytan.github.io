@@ -1,0 +1,186 @@
+@import "StarrySky.scss";
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+$yellow-color: rgb(241, 186, 92);
+$purple-color: rgb(179, 157, 250);
+
+@keyframes gold-sweep {
+  from { background-position: 0% 50%; }
+  to   { background-position: 100% 50%; }
+}
+
+.title-screen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text{
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  perspective: 600px;
+  perspective-origin: center bottom;
+
+  // arrow spacing knobs
+  $arrow-padding: 3rem;   // total left+right padding reserved
+  $arrow-offset: 1rem;    // how far inside the padded area arrows sit
+}
+.nav{
+  z-index: 10;
+  position: relative;
+  display: inline-block;                 
+  padding: 0 $arrow-padding; 
+  margin: auto auto 1rem;
+  line-height: 1;
+  font-family: 'Press Start 2P', 'arial', 'sans-serif';
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.28rem;
+  color: #FFF;
+  cursor: pointer;
+  -webkit-text-fill-color: currentColor;
+  text-fill-color: currentColor;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 120ms linear;
+    font-family: 'Press Start 2P', 'arial', 'sans-serif';
+    font-size: 1.28rem;
+    line-height: 0.8rem;
+    color: $yellow-color;
+    will-change: opacity;
+  }
+  &::before { content: "►"; left: $arrow-offset; }
+  &::after  { content: "◄"; right: $arrow-offset; }
+
+  /* ---------- GLOSS LAYER ---------- */
+  /* Banded gradient and animation */
+  .nav__gloss {
+    z-index: 20;
+    position: absolute;
+    inset: 0;                  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;                  
+    transition: opacity 120ms linear;
+
+    background-image: linear-gradient(
+      90deg,
+      #be7d06 0%,  #be7d06 18%,
+      #d6a400 18%, #d6a400 36%,
+      #ffffff 36%, #ffffff 40%,
+      #ffb000 40%, #ffb000 58%,
+      #be7d06 58%, #be7d06 100%
+    );
+    background-size: 260% 100%;
+    background-position: 0% 50%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    transform: translateZ(0);
+    will-change: background-position, opacity;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus,
+  &.is-hovered {
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+    /* reveal and animate */
+    .nav__gloss {
+      opacity: 1;
+      animation: gold-sweep 1.5s steps(14, end) infinite;
+      -webkit-animation: gold-sweep 1.5s steps(14, end) infinite;
+    }
+  }
+}
+h1{
+  margin: 0 auto auto auto;
+  font-family: 'Press Start 2P', 'arial', 'sans-serif';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 7rem;
+  -webkit-text-stroke: .5px #bac1ef;
+  transform-origin: center bottom;
+  transform:
+    rotateX(28deg)
+    scaleY(1.7);
+
+    background-image: linear-gradient(
+      180deg,
+      #7996de 0%,  #7996de 24%,
+      #8d9fe2 24%, #8d9fe2 36%,
+      #99ace7 36%, #99ace7 40%,
+      #bac1ef 40%, #bac1ef 48%,
+      #ffffff 48%, #ffffff 50%,
+      #2f4cd4 50%, #2f4cd4 56%,
+      #3f5ed7 60%, #3f5ed7 64%,
+      #5f79d6 64%, #5f79d6 100%
+    );
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+/* 3D block look */
+// .block3d{
+//   text-shadow:
+//     1px 1px 0 #3f5ed7,
+//     2px 2px 0 #3f5ed7,
+//     3px 3px 0 #3f5ed7,
+//     4px 4px 0 #3f5ed7,
+//     5px 5px 0 #3f5ed7,
+//     6px 6px 0 #3f5ed7,
+//     7px 7px 0 #3f5ed7,
+//     8px 8px 0 #3f5ed7,
+//     9px 9px 0 #3f5ed7,
+//     10px 10px 0 #3f5ed7,
+//     11px 11px 0 #3f5ed7,
+//     12px 12px 0 #3f5ed7,
+//     13px 13px 0 #3f5ed7,
+//     14px 14px 0 #3f5ed7,
+//     15px 15px 0 #3f5ed7,
+//     16px 16px 0 #3f5ed7,
+//     17px 17px 0 #3f5ed7,
+//     18px 18px 0 #3f5ed7,
+//     19px 19px 0 #3f5ed7,
+//     20px 20px 0 #3f5ed7;  /* double depth */
+// }
+h3{
+  margin: 0 auto 6rem auto;
+  font-family: 'Silkscreen', 'arial', 'sans-serif';
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $purple-color;
+
+  &.top{
+    margin: auto auto 1rem auto;
+  }
+}

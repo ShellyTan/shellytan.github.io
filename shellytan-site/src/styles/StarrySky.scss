@@ -1,0 +1,103 @@
+
+@use "sass:math";
+// ---------- Controls ----------
+$starfield-width: 100vw;
+$starfield-height: 100vh;
+
+$seed: 43;
+$jitter: 1;
+$grid: 2px;
+
+$small-count: 120;
+$medium-count: 30;
+$large-count: 10;
+
+$small-size: 2px;
+$medium-size: 4px;
+$large-size: 6px;
+
+$small-color: rgba(243, 143, 238, 0.55);
+$medium-color: rgba(134, 136, 218, 0.75);
+$large-color:  rgba(185, 252, 234, 0.85);
+
+// ---------- Helpers ----------
+@function snap($value, $step) {
+  @if $step <= 1px { @return $value; }
+  @return math.round(math.div($value, $step)) * $step;
+}
+
+@function fract($x) {
+  @return $x - math.floor($x);
+}
+
+@function rand01($n, $salt: 0) {
+  $t: ($n * 12.9898) + ($salt * 78.233) + ($seed * 37.719);
+  @return fract(math.sin($t) * 43758.5453);
+}
+
+@function jitterize($u) {
+  @if $jitter <= 0 { @return $u; }
+  $p: 1 + (0.9 * $jitter);
+  $curved: math.pow($u, $p);
+  $mix: math.min(1, 0.35 * $jitter);
+  @return (1 - $mix) * $u + $mix * $curved;
+}
+
+@function star-shadows($count, $color, $salt: 0) {
+  $shadows: ();
+  @for $i from 1 through $count {
+    $u1: rand01($i * 2, $salt);
+    $u2: rand01($i * 2 + 1, $salt + 999);
+
+    $x: snap(jitterize($u1) * $starfield-width, $grid);
+    $y: snap(jitterize($u2) * $starfield-height, $grid);
+
+    $shadows: append($shadows, $x $y 0 0 $color, comma);
+  }
+  @return $shadows;
+}
+
+.starry-sky {
+  position: fixed;
+  inset: 0;         
+  background: none;  
+  pointer-events: none;
+  z-index: 0;        
+  overflow: hidden;
+}
+
+// ---------- Mixin ----------
+@mixin pixel-starry-sky {
+  &::before,
+  &::after,
+  > .star-layer--large {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    width: $small-size;
+    height: $small-size;
+    background: $small-color;
+    box-shadow: star-shadows($small-count, $small-color, 100);
+  }
+
+  &::after {
+    content: "";
+    width: $medium-size;
+    height: $medium-size;
+    background: $medium-color;
+    box-shadow: star-shadows($medium-count, $medium-color, 200);
+  }
+
+  > .star-layer--large {
+    width: $large-size;
+    height: $large-size;
+    background: $large-color;
+    box-shadow: star-shadows($large-count, $large-color, 300);
+  }
+}
+
+.starry-sky { @include pixel-starry-sky; }
