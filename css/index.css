@@ -248,10 +248,22 @@ footer div div img:hover {
 /* About Page Styling*/
 
 #about-pic {
+	display: block;
+	max-width: none;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	border: #000 7px solid;
 }
 
+@media(max-width: 768px){
+	#about-text{
+		margin-bottom: 30px;
+	}
+	#about-pic{
+		max-width: 400px;
+	}
+}
 #about-text p {
 	padding-top: 15px;
 }
