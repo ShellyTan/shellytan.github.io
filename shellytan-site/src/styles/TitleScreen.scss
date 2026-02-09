@@ -3,6 +3,8 @@
 
 $yellow-color: rgb(241, 186, 92);
 $purple-color: rgb(179, 157, 250);
+$arrow-padding: 3rem;   // total left+right padding reserved
+$arrow-offset: 1rem;    // how far inside the padded area arrows sit
 
 @keyframes gold-sweep {
   from { background-position: 0% 50%; }
@@ -25,10 +27,6 @@ $purple-color: rgb(179, 157, 250);
   padding: 1rem;
   perspective: 600px;
   perspective-origin: center bottom;
-
-  // arrow spacing knobs
-  $arrow-padding: 3rem;   // total left+right padding reserved
-  $arrow-offset: 1rem;    // how far inside the padded area arrows sit
 }
 .nav{
   z-index: 10;
