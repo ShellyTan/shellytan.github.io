@@ -4,7 +4,7 @@
 $starfield-width: 100vw;
 $starfield-height: 100vh;
 
-$seed: 43;
+$seed: 33;
 $jitter: 1;
 $grid: 2px;
 
@@ -57,7 +57,7 @@ $large-color:  rgba(185, 252, 234, 0.85);
   @return $shadows;
 }
 
-.starry-sky {
+#starry-sky {
   position: fixed;
   inset: 0;         
   background: none;  
@@ -100,4 +100,4 @@ $large-color:  rgba(185, 252, 234, 0.85);
   }
 }
 
-.starry-sky { @include pixel-starry-sky; }
+#starry-sky { @include pixel-starry-sky; }

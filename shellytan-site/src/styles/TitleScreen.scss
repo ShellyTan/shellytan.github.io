@@ -11,7 +11,7 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
   to   { background-position: 100% 50%; }
 }
 
-.title-screen{
+#title-screen{
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -33,13 +33,13 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
   position: relative;
   display: inline-block;                 
   padding: 0 $arrow-padding; 
-  margin: auto auto 1rem;
-  line-height: 1;
-  font-family: 'Press Start 2P', 'arial', 'sans-serif';
+  margin: 1rem auto auto auto;
+  line-height: 1.2rem;
+  font-family: 'Silkscreen', 'arial', 'sans-serif';
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.28rem;
+  font-size: 1.6rem;
   color: #FFF;
   cursor: pointer;
   -webkit-text-fill-color: currentColor;
@@ -54,10 +54,10 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
     pointer-events: none;
     opacity: 0;
     transition: opacity 120ms linear;
-    font-family: 'Press Start 2P', 'arial', 'sans-serif';
+    font-family: 'Silkscreen', 'arial', 'sans-serif';
     font-size: 1.28rem;
-    line-height: 0.8rem;
-    color: $yellow-color;
+    line-height: 1.2rem;
+    color: #d6a400;
     will-change: opacity;
   }
   &::before { content: "►"; left: $arrow-offset; }
@@ -112,73 +112,83 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
     }
   }
 }
-h1{
-  margin: 0 auto auto auto;
-  font-family: 'Press Start 2P', 'arial', 'sans-serif';
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-  color: transparent;
-  font-size: 7rem;
-  -webkit-text-stroke: .5px #bac1ef;
-  transform-origin: center bottom;
-  transform:
-    rotateX(28deg)
-    scaleY(1.7);
+// h1{
+//   margin: 0 auto auto auto;
+//   font-family: 'Press Start 2P', 'arial', 'sans-serif';
+//   font-weight: 400;
+//   font-style: normal;
+//   text-transform: uppercase;
+//   color: transparent;
+//   font-size: 7rem;
+//   -webkit-text-stroke: .5px #bac1ef;
+//   transform-origin: center bottom;
+//   transform:
+//     rotateX(28deg)
+//     scaleY(1.7);
 
-    background-image: linear-gradient(
-      180deg,
-      #7996de 0%,  #7996de 24%,
-      #8d9fe2 24%, #8d9fe2 36%,
-      #99ace7 36%, #99ace7 40%,
-      #bac1ef 40%, #bac1ef 48%,
-      #ffffff 48%, #ffffff 50%,
-      #2f4cd4 50%, #2f4cd4 56%,
-      #3f5ed7 60%, #3f5ed7 64%,
-      #5f79d6 64%, #5f79d6 100%
-    );
-    background-size: 100% 100%;
-    background-position: 50% 50%;
+//     background-image: linear-gradient(
+//       180deg,
+//       #7996de 0%,  #7996de 24%,
+//       #8d9fe2 24%, #8d9fe2 36%,
+//       #99ace7 36%, #99ace7 40%,
+//       #bac1ef 40%, #bac1ef 48%,
+//       #ffffff 48%, #ffffff 50%,
+//       #2f4cd4 50%, #2f4cd4 56%,
+//       #3f5ed7 60%, #3f5ed7 64%,
+//       #5f79d6 64%, #5f79d6 100%
+//     );
+//     background-size: 100% 100%;
+//     background-position: 50% 50%;
 
-    -webkit-background-clip: text;
-    background-clip: text;
-
-}
-/* 3D block look */
-// .block3d{
-//   text-shadow:
-//     1px 1px 0 #3f5ed7,
-//     2px 2px 0 #3f5ed7,
-//     3px 3px 0 #3f5ed7,
-//     4px 4px 0 #3f5ed7,
-//     5px 5px 0 #3f5ed7,
-//     6px 6px 0 #3f5ed7,
-//     7px 7px 0 #3f5ed7,
-//     8px 8px 0 #3f5ed7,
-//     9px 9px 0 #3f5ed7,
-//     10px 10px 0 #3f5ed7,
-//     11px 11px 0 #3f5ed7,
-//     12px 12px 0 #3f5ed7,
-//     13px 13px 0 #3f5ed7,
-//     14px 14px 0 #3f5ed7,
-//     15px 15px 0 #3f5ed7,
-//     16px 16px 0 #3f5ed7,
-//     17px 17px 0 #3f5ed7,
-//     18px 18px 0 #3f5ed7,
-//     19px 19px 0 #3f5ed7,
-//     20px 20px 0 #3f5ed7;  /* double depth */
+//     -webkit-background-clip: text;
+//     background-clip: text;
 // }
-h3{
-  margin: 0 auto 6rem auto;
+.name-wrapper{
+  text-align: center;
+  padding-right: 4%;
+
+  img{
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto .5rem auto;
+  }
+
+  @media(max-width: 768px){
+    img{
+      width: 90%;
+    }
+  }
+}
+
+h2{
   font-family: 'Silkscreen', 'arial', 'sans-serif';
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-style: normal;
-  text-transform: uppercase;
   text-align: center;
   color: $purple-color;
-
   &.top{
     margin: auto auto 1rem auto;
+  }
+  &.bottom{
+    margin: -2.3rem auto 4rem auto;
+    line-height: 1.8rem;
+    max-width: 500px;
+  }
+
+  @media(max-width: 768px){
+    &.bottom{
+      max-width: 300px;
+    }
+  }
+
+  @media(max-width: 650px){
+    font-size: 1rem;
+
+    &.bottom{
+      margin-top: -1.6rem;
+      line-height: 1.7rem;
+    }
   }
 }
