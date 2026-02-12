@@ -4,12 +4,12 @@ import name from '../img/name-2.png';
 
 function TitleScreen() {
   return (
-    <div id="title-screen">
-      <div className="text">
+    <div className="container">
+      <div id="title-screen">
         <h2 className="top">Hi, my name is</h2>
-        {/* <h1>Shelly</h1> */}
+        <h1>Shelly</h1>
         <div className="name-wrapper">
-          <img src={name} alt="Pixel art version of the name Shelly" />
+          <img src={name} alt="" />
         </div>
 
         <h2 className="bottom">Journalist, designer, developer</h2>
