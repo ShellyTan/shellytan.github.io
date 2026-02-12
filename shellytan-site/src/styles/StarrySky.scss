@@ -16,9 +16,9 @@ $small-size: 2px;
 $medium-size: 4px;
 $large-size: 6px;
 
-$small-color: rgba(243, 143, 238, 0.55);
-$medium-color: rgba(134, 136, 218, 0.75);
-$large-color:  rgba(185, 252, 234, 0.85);
+$small-color: rgba(243, 143, 238, 0.35);
+$medium-color: rgba(134, 136, 218, 0.70);
+$large-color:  rgba(185, 252, 234, 0.45);
 
 // ---------- Helpers ----------
 @function snap($value, $step) {

@@ -1,6 +1,6 @@
 // import logo from '../logo.svg';
 import '../styles/TitleScreen.scss';
-import name from '../name.png';
+import name from '../img/name-2.png';
 
 function TitleScreen() {
   return (
