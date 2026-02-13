@@ -3,13 +3,10 @@
     display: inline-flex;
     width: max-content;
     margin: 0;
-    padding: 8px 10px;
+    padding: 0;
     align-items: center;
     justify-content: flex-end; // active stays on the right edge
     gap: 10px;
-    border-radius: 999px;
-    background: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(6px);
     list-style: none;
   }
 
@@ -47,20 +44,53 @@
 
   &__link {
     display: inline-block;
-    padding: 8px 14px;
-    border-radius: 999px;
+    padding: 5px 8px;
     text-decoration: none;
     white-space: nowrap;
     color: white;
-    font-weight: 500;
+    font-family: 'Silkscreen', 'arial', 'sans-serif';
+    font-size: 0.9rem;
+    font-weight: 400;
     transition: background 200ms ease, transform 200ms ease;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.18);
+    color: rgba(255,255,255,0.7);
     }
   }
 
   &__item.is-active &__link {
-    background: rgba(255, 255, 255, 0.18);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    // background: $pink;
+    // color: $bg-black;
+  }
+}
+
+.global-nav {
+
+  &__item.is-active &__link {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+
+    &::before {
+      content: "❮"; 
+      position: absolute;
+      left: -10px;
+      top: 55%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      opacity: 1;
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+  }
+
+  /* When nav expands, hide the caret */
+  &:hover &__item.is-active &__link::before,
+  &:focus-within &__item.is-active &__link::before {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-4px);
   }
 }
