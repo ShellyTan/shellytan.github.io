@@ -1,22 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HashRouter } from "react-router-dom";
 import './styles/base.scss';
-import TitleScreen from './components/TitleScreen';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className="container">
-      <header id="title-screen">
-        <TitleScreen />
-      </header>
-      <main>
-      </main>
-      <div id="starry-sky" aria-hidden="true">
-        <span className="star-layer--large"></span>
-      </div>
-    </div>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
