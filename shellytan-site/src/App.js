@@ -5,6 +5,8 @@ import Portfolio from './components/TitleScreen';
 import Contact from './components/TitleScreen';
 
 import GlobalNav from "./components/GlobalNav";
+import SocialLinks from "./components/SocialLinks";
+
 // import TitleScreen from "./TitleScreen";
 // import About from "./pages/About";
 // import Portfolio from "./pages/Portfolio";
@@ -14,7 +16,10 @@ function Layout() {
   return (
     <div className="container">
       <header>
-        <GlobalNav />
+        <div className="header-right">
+          <GlobalNav />
+          <SocialLinks />
+        </div>
       </header>
 
       <main>
