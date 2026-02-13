@@ -12,10 +12,10 @@ root.render(
         <TitleScreen />
       </header>
       <main>
-        <div id="starry-sky" aria-hidden="true">
-          <span className="star-layer--large"></span>
-        </div>
       </main>
+      <div id="starry-sky" aria-hidden="true">
+        <span className="star-layer--large"></span>
+      </div>
     </div>
   </React.StrictMode>
 );
