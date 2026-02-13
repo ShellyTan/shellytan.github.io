@@ -28,90 +28,90 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
   perspective: 600px;
   perspective-origin: center bottom;
 }
-.nav{
-  z-index: 10;
-  position: relative;
-  display: inline-block;                 
-  padding: 0 $arrow-padding; 
-  margin: 1rem auto auto auto;
-  line-height: 1.2rem;
-  font-family: 'Silkscreen', 'arial', 'sans-serif';
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  color: #FFF;
-  cursor: pointer;
-  -webkit-text-fill-color: currentColor;
-  text-fill-color: currentColor;
+// .nav{
+//   z-index: 10;
+//   position: relative;
+//   display: inline-block;                 
+//   padding: 0 $arrow-padding; 
+//   margin: 1rem auto auto auto;
+//   line-height: 1.2rem;
+//   font-family: 'Silkscreen', 'arial', 'sans-serif';
+//   font-weight: 700;
+//   font-style: normal;
+//   text-transform: uppercase;
+//   font-size: 1.6rem;
+//   color: #FFF;
+//   cursor: pointer;
+//   -webkit-text-fill-color: currentColor;
+//   text-fill-color: currentColor;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 120ms linear;
-    font-family: 'Silkscreen', 'arial', 'sans-serif';
-    font-size: 1.28rem;
-    line-height: 1.2rem;
-    color: #d6a400;
-    will-change: opacity;
-  }
-  &::before { content: "►"; left: $arrow-offset; }
-  &::after  { content: "◄"; right: $arrow-offset; }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     pointer-events: none;
+//     opacity: 0;
+//     transition: opacity 120ms linear;
+//     font-family: 'Silkscreen', 'arial', 'sans-serif';
+//     font-size: 1.28rem;
+//     line-height: 1.2rem;
+//     color: #d6a400;
+//     will-change: opacity;
+//   }
+//   &::before { content: "►"; left: $arrow-offset; }
+//   &::after  { content: "◄"; right: $arrow-offset; }
 
-  /* ---------- GLOSS LAYER ---------- */
-  /* Banded gradient and animation */
-  .nav__gloss {
-    z-index: 20;
-    position: absolute;
-    inset: 0;                  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;                  
-    transition: opacity 120ms linear;
+//   /* ---------- GLOSS LAYER ---------- */
+//   /* Banded gradient and animation */
+//   .nav__gloss {
+//     z-index: 20;
+//     position: absolute;
+//     inset: 0;                  
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     opacity: 0;                  
+//     transition: opacity 120ms linear;
 
-    background-image: linear-gradient(
-      90deg,
-      #be7d06 0%,  #be7d06 18%,
-      #d6a400 18%, #d6a400 36%,
-      #ffffff 36%, #ffffff 40%,
-      #ffb000 40%, #ffb000 58%,
-      #be7d06 58%, #be7d06 100%
-    );
-    background-size: 260% 100%;
-    background-position: 0% 50%;
+//     background-image: linear-gradient(
+//       90deg,
+//       #be7d06 0%,  #be7d06 18%,
+//       #d6a400 18%, #d6a400 36%,
+//       #ffffff 36%, #ffffff 40%,
+//       #ffb000 40%, #ffb000 58%,
+//       #be7d06 58%, #be7d06 100%
+//     );
+//     background-size: 260% 100%;
+//     background-position: 0% 50%;
 
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     text-fill-color: transparent;
 
-    transform: translateZ(0);
-    will-change: background-position, opacity;
-    pointer-events: none;
-  }
+//     transform: translateZ(0);
+//     will-change: background-position, opacity;
+//     pointer-events: none;
+//   }
 
-  &:hover,
-  &:focus,
-  &.is-hovered {
+//   &:hover,
+//   &:focus,
+//   &.is-hovered {
 
-    &::before,
-    &::after {
-      opacity: 1;
-    }
-    /* reveal and animate */
-    .nav__gloss {
-      opacity: 1;
-      animation: gold-sweep 1.5s steps(14, end) infinite;
-      -webkit-animation: gold-sweep 1.5s steps(14, end) infinite;
-    }
-  }
-}
+//     &::before,
+//     &::after {
+//       opacity: 1;
+//     }
+//     /* reveal and animate */
+//     .nav__gloss {
+//       opacity: 1;
+//       animation: gold-sweep 1.5s steps(14, end) infinite;
+//       -webkit-animation: gold-sweep 1.5s steps(14, end) infinite;
+//     }
+//   }
+// }
 h1{
   // Hidden but present for screenreaders
   clip: rect(0,0,0,0);
@@ -171,4 +171,141 @@ h2{
       line-height: 1.7rem;
     }
   }
+}
+
+.nav {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.nav a {
+  position: relative;
+  display: inline-block;
+  padding: 0.65rem 1.25rem 0.75rem 1.25rem;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  filter: drop-shadow(0 6px 0 #1e3a8a);
+  /* pixel corner staircase */
+  clip-path: polygon(
+    /* top edge */
+    12px 0,
+    calc(100% - 12px) 0,
+    /* top-right */
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 8px,
+    100% 8px,
+    100% 12px,
+    /* right edge */
+    100% calc(100% - 12px),
+    /* bottom-right */
+    100% calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) 100%,
+    calc(100% - 12px) 100%,
+    /* bottom edge */
+    12px 100%,
+    /* bottom-left */
+    8px 100%,
+    8px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 8px),
+    0 calc(100% - 8px),
+    0 calc(100% - 12px),
+    /* left edge */
+    0 12px,
+    /* top-left corner */
+    0 8px,
+    4px 8px,
+    4px 4px,
+    8px 4px,
+    8px 0
+  );
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+  font-family: 'Silkscreen', 'arial', 'sans-serif';
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* Highlight strip */
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+/* Shadow strip */
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 4px;
+  background: #1e3a8a;
+  pointer-events: none;
+}
+.nav a:hover, .nav a:active {
+  transform: translateY(6px);
+  padding-bottom: calc(0.75rem - 6px);
+  &::after {
+    display: none;
+  }
+  clip-path: polygon(
+    /* top edge */
+    12px 0,
+    calc(100% - 12px) 0,
+
+    /* top-right corner */
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 8px,
+    100% 8px,
+    100% 12px,
+
+    /* right edge  */
+    100% calc(100% - 8px),
+
+    /* bottom-right corner */
+    100% calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    calc(100% - 8px) 100%,
+
+    /* bottom edge */
+    8px 100%,
+
+    /* bottom-left corner */
+    4px 100%,
+    4px calc(100% - 4px),
+    0 calc(100% - 4px),
+    0 calc(100% - 8px),
+
+    /* left edge */
+    0 12px,
+
+    /* top-left corner */
+    0 8px,
+    4px 8px,
+    4px 4px,
+    8px 4px,
+    8px 0
+  );
+}
+.nav a:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
 }

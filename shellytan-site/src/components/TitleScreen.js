@@ -11,14 +11,20 @@ function TitleScreen() {
         <div className="name-wrapper">
           <img src={name} alt="" />
         </div>
-
         <h2 className="bottom">Journalist, designer, developer</h2>
 
-        <span className="nav about">About<span className="nav__gloss" aria-hidden="true">About</span></span>
+        {/* <span className="nav about">About<span className="nav__gloss" aria-hidden="true">About</span></span>
         <span className="nav portfolio">Portfolio<span className="nav__gloss" aria-hidden="true">Portfolio</span></span>
-        <span className="nav contact">Contact<span className="nav__gloss" aria-hidden="true">Contact</span></span>
+        <span className="nav contact">Contact<span className="nav__gloss" aria-hidden="true">Contact</span></span> */}
       </div>
-      <div id="starry-sky">
+      <nav aria-label="Homepage navigation">
+        <ul class="nav">
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="starry-sky" aria-hidden="true">
         <span className="star-layer--large" aria-hidden="true"></span>
       </div>
     </div>
