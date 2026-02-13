@@ -3,7 +3,7 @@ import name from '../img/name-2.png';
 
 function TitleScreen() {
   return (
-    <>
+    <div className="wrapper">
         <p className="intro top">Hi, my name is</p>
         <h1>Shelly</h1>
         <div className="name-wrapper">
@@ -19,7 +19,7 @@ function TitleScreen() {
             <li><NavLink to="/contact" className="btn-green">Contact</NavLink></li>
           </ul>
         </nav>
-    </>
+    </div>
   );
 }
 
