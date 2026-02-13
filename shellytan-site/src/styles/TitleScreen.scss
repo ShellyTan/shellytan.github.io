@@ -1,8 +1,10 @@
 @import "StarrySky.scss";
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
 
-$yellow-color: rgb(241, 186, 92);
-$purple-color: rgb(179, 157, 250);
+$yellow: rgb(231, 167, 57);
+$purple: rgb(179, 157, 250);
+$pink: #c14b84;
+$green: #3cb0a8;
 
 .container{
   width: 100vw;
@@ -56,7 +58,7 @@ h2{
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  color: $purple-color;
+  color: $purple;
   &.top{
     margin: auto auto 1rem auto;
   }
@@ -83,8 +85,8 @@ h2{
 }
 
 .nav {
-  position: relative;
   z-index: 5;
+  position: relative;
   display: flex;
   padding: 0;
   margin: 0 auto;
@@ -96,10 +98,8 @@ h2{
   position: relative;
   display: inline-block;
   padding: 0.65rem 1.25rem 0.75rem 1.25rem;
-  background: #3b82f6;
-  color: white;
+  color: #0f0d15;
   text-decoration: none;
-  filter: drop-shadow(0 6px 0 #1e3a8a);
   /* pixel corner staircase */
   clip-path: polygon(
     /* top edge */
@@ -139,10 +139,20 @@ h2{
     8px 4px,
     8px 0
   );
-  transition: transform 0.05s ease, box-shadow 0.05s ease;
   font-family: 'Silkscreen', 'arial', 'sans-serif';
   font-size: 1.2rem;
-  font-weight: 400;
+  letter-spacing: -0.05em;
+  font-kerning: normal;
+
+  &.btn-pink{
+    background: $pink;
+  }
+  &.btn-yellow{
+    background: $yellow;
+  }
+  &.btn-green{
+    background: $green;
+  }
 }
 /* Highlight strip */
 .nav a::before {
@@ -152,7 +162,7 @@ h2{
   left: 0;
   right: 0;
   height: 4px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.35);
   pointer-events: none;
 }
 /* Shadow strip */
@@ -163,15 +173,13 @@ h2{
   left: 0px;
   right: 0px;
   height: 4px;
-  background: #1e3a8a;
+  background: rgba(0,0,0,0.5);
   pointer-events: none;
 }
 .nav a:hover, .nav a:active {
   transform: translateY(6px);
   padding-bottom: calc(0.75rem - 6px);
-  &::after {
-    display: none;
-  }
+  color: #FFF;
   clip-path: polygon(
     /* top edge */
     12px 0,
@@ -213,6 +221,9 @@ h2{
     8px 4px,
     8px 0
   );
+  &::after {
+    display: none;
+  }
 }
 .nav a:focus-visible {
   outline: 3px solid #ffbf47;

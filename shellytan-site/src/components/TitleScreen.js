@@ -15,9 +15,9 @@ function TitleScreen() {
       </div>
       <nav aria-label="Homepage navigation">
         <ul class="nav">
-          <li><a href="/about">About</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about" class="btn-green">About</a></li>
+          <li><a href="/portfolio" class="btn-green">Portfolio</a></li>
+          <li><a href="/contact" class="btn-green">Contact</a></li>
         </ul>
       </nav>
       <div id="starry-sky" aria-hidden="true">
