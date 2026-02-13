@@ -6,10 +6,6 @@ import Contact from './components/TitleScreen';
 import GlobalNav from "./components/GlobalNav";
 import SocialLinks from "./components/SocialLinks";
 
-// import About from "./pages/About";
-// import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
-
 function Layout() {
   return (
     <div className="container">
