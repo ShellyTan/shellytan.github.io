@@ -12,10 +12,6 @@ function TitleScreen() {
           <img src={name} alt="" />
         </div>
         <h2 className="bottom">Journalist, designer, developer</h2>
-
-        {/* <span className="nav about">About<span className="nav__gloss" aria-hidden="true">About</span></span>
-        <span className="nav portfolio">Portfolio<span className="nav__gloss" aria-hidden="true">Portfolio</span></span>
-        <span className="nav contact">Contact<span className="nav__gloss" aria-hidden="true">Contact</span></span> */}
       </div>
       <nav aria-label="Homepage navigation">
         <ul class="nav">

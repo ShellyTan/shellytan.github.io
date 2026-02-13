@@ -3,13 +3,6 @@
 
 $yellow-color: rgb(241, 186, 92);
 $purple-color: rgb(179, 157, 250);
-$arrow-padding: 3rem;   // total left+right padding reserved
-$arrow-offset: 1rem;    // how far inside the padded area arrows sit
-
-@keyframes gold-sweep {
-  from { background-position: 0% 50%; }
-  to   { background-position: 100% 50%; }
-}
 
 .container{
   width: 100vw;
@@ -28,90 +21,6 @@ $arrow-offset: 1rem;    // how far inside the padded area arrows sit
   perspective: 600px;
   perspective-origin: center bottom;
 }
-// .nav{
-//   z-index: 10;
-//   position: relative;
-//   display: inline-block;                 
-//   padding: 0 $arrow-padding; 
-//   margin: 1rem auto auto auto;
-//   line-height: 1.2rem;
-//   font-family: 'Silkscreen', 'arial', 'sans-serif';
-//   font-weight: 700;
-//   font-style: normal;
-//   text-transform: uppercase;
-//   font-size: 1.6rem;
-//   color: #FFF;
-//   cursor: pointer;
-//   -webkit-text-fill-color: currentColor;
-//   text-fill-color: currentColor;
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     pointer-events: none;
-//     opacity: 0;
-//     transition: opacity 120ms linear;
-//     font-family: 'Silkscreen', 'arial', 'sans-serif';
-//     font-size: 1.28rem;
-//     line-height: 1.2rem;
-//     color: #d6a400;
-//     will-change: opacity;
-//   }
-//   &::before { content: "►"; left: $arrow-offset; }
-//   &::after  { content: "◄"; right: $arrow-offset; }
-
-//   /* ---------- GLOSS LAYER ---------- */
-//   /* Banded gradient and animation */
-//   .nav__gloss {
-//     z-index: 20;
-//     position: absolute;
-//     inset: 0;                  
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     opacity: 0;                  
-//     transition: opacity 120ms linear;
-
-//     background-image: linear-gradient(
-//       90deg,
-//       #be7d06 0%,  #be7d06 18%,
-//       #d6a400 18%, #d6a400 36%,
-//       #ffffff 36%, #ffffff 40%,
-//       #ffb000 40%, #ffb000 58%,
-//       #be7d06 58%, #be7d06 100%
-//     );
-//     background-size: 260% 100%;
-//     background-position: 0% 50%;
-
-//     -webkit-background-clip: text;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     text-fill-color: transparent;
-
-//     transform: translateZ(0);
-//     will-change: background-position, opacity;
-//     pointer-events: none;
-//   }
-
-//   &:hover,
-//   &:focus,
-//   &.is-hovered {
-
-//     &::before,
-//     &::after {
-//       opacity: 1;
-//     }
-//     /* reveal and animate */
-//     .nav__gloss {
-//       opacity: 1;
-//       animation: gold-sweep 1.5s steps(14, end) infinite;
-//       -webkit-animation: gold-sweep 1.5s steps(14, end) infinite;
-//     }
-//   }
-// }
 h1{
   // Hidden but present for screenreaders
   clip: rect(0,0,0,0);
