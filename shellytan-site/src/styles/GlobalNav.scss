@@ -1,0 +1,70 @@
+.global-nav {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+
+  &__list {
+    display: inline-flex;
+    width: max-content;
+    margin: 0;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: flex-end; // active stays on the right edge
+    gap: 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    list-style: none;
+  }
+
+  &__item {
+    // collapsed default for non-active items
+    width: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateX(10px);
+    opacity: 0;
+
+    transition:
+      opacity 220ms ease,
+      width 260ms ease,
+      transform 220ms ease;
+
+    &.is-active {
+      width: auto;
+      overflow: visible;
+      pointer-events: auto;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  // expand: reveal all items to the left because active is last/right)
+  &:hover &__item,
+  &:focus-within &__item {
+    width: auto;
+    overflow: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    font-weight: 500;
+    transition: background 200ms ease, transform 200ms ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+  }
+
+  &__item.is-active &__link {
+    background: rgba(255, 255, 255, 0.18);
+  }
+}
