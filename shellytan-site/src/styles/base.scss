@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@import "_variables.scss";
+@import "StarrySky.scss";
+@import "TitleScreen.scss";
 
 body,html{
-    background: #0f0d15;
+    background: $bg-black;
 }
 body {
   margin: 0;
@@ -10,8 +14,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

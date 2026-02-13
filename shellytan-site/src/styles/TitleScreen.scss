@@ -1,18 +1,3 @@
-@import "StarrySky.scss";
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
-
-$yellow: rgb(231, 167, 57);
-$purple: rgb(179, 157, 250);
-$pink: #c14b84;
-$green: #3cb0a8;
-
-.container{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 #title-screen{
   z-index: 2;
   display: flex;
@@ -52,7 +37,7 @@ h1{
   }
 }
 
-h2{
+p.intro{
   font-family: 'Silkscreen', 'arial', 'sans-serif';
   font-size: 1.2rem;
   font-weight: 400;
@@ -89,7 +74,7 @@ h2{
     }
   }
 }
-
+/* Button nav */
 .nav {
   z-index: 5;
   position: relative;
@@ -110,7 +95,7 @@ h2{
   position: relative;
   display: inline-block;
   padding: 0.65rem 1.25rem 0.75rem 1.25rem;
-  color: #0f0d15;
+  color: $bg-black;
   text-decoration: none;
   /* pixel corner staircase */
   clip-path: polygon(
@@ -175,7 +160,7 @@ h2{
     padding: .4rem .8rem .5rem .8rem;
   }
 }
-/* Highlight strip */
+/* Highlight */
 .nav a::before {
   content: "";
   position: absolute;
@@ -186,7 +171,7 @@ h2{
   background: rgba(255, 255, 255, 0.35);
   pointer-events: none;
 }
-/* Shadow strip */
+/* Shadow */
 .nav a::after {
   content: "";
   position: absolute;
@@ -205,7 +190,6 @@ h2{
     /* top edge */
     12px 0,
     calc(100% - 12px) 0,
-
     /* top-right corner */
     calc(100% - 8px) 0,
     calc(100% - 8px) 4px,
@@ -213,28 +197,22 @@ h2{
     calc(100% - 4px) 8px,
     100% 8px,
     100% 12px,
-
-    /* right edge  */
+    /* right edge */
     100% calc(100% - 8px),
-
     /* bottom-right corner */
     100% calc(100% - 4px),
     calc(100% - 4px) calc(100% - 4px),
     calc(100% - 4px) 100%,
     calc(100% - 8px) 100%,
-
     /* bottom edge */
     8px 100%,
-
     /* bottom-left corner */
     4px 100%,
     4px calc(100% - 4px),
     0 calc(100% - 4px),
     0 calc(100% - 8px),
-
     /* left edge */
     0 12px,
-
     /* top-left corner */
     0 8px,
     4px 8px,
