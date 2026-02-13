@@ -5,13 +5,13 @@
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-end; // active stays on the right edge
+    justify-content: flex-end; // active stays on right
     gap: 10px;
     list-style: none;
   }
 
   &__item {
-    // collapsed default for non-active items
+    // collapsed default
     width: 0;
     overflow: hidden;
     pointer-events: none;
@@ -32,7 +32,6 @@
     }
   }
 
-  // expand: reveal all items to the left because active is last/right)
   &:hover &__item,
   &:focus-within &__item {
     width: auto;
@@ -59,22 +58,11 @@
   }
 
   &__item.is-active &__link {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
-    // background: $pink;
-    // color: $bg-black;
-  }
-}
-
-.global-nav {
-
-  &__item.is-active &__link {
     position: relative;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
-
+    
     &::before {
       content: "❮"; 
       position: absolute;
@@ -87,7 +75,6 @@
     }
   }
 
-  /* When nav expands, hide the caret */
   &:hover &__item.is-active &__link::before,
   &:focus-within &__item.is-active &__link::before {
     opacity: 0;
