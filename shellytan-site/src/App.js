@@ -3,11 +3,9 @@ import TitleScreen from './components/TitleScreen';
 import About from './components/TitleScreen';
 import Portfolio from './components/TitleScreen';
 import Contact from './components/TitleScreen';
-
 import GlobalNav from "./components/GlobalNav";
 import SocialLinks from "./components/SocialLinks";
 
-// import TitleScreen from "./TitleScreen";
 // import About from "./pages/About";
 // import Portfolio from "./pages/Portfolio";
 // import Contact from "./pages/Contact";

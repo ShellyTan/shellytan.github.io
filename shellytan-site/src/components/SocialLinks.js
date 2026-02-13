@@ -14,7 +14,7 @@ export default function SocialLinks() {
           >
             <img
               src={Twitter}
-              alt=""
+              alt="Twitter/X icon"
               className="social-nav__icon"
             />
           </a>
@@ -29,7 +29,7 @@ export default function SocialLinks() {
           >
             <img
               src={LinkedIn}
-              alt=""
+              alt="LinkedIn icon"
               className="social-nav__icon"
             />
           </a>
