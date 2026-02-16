@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, useLocation } from "react-router-dom";
+import { Routes, Route, Outlet, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 import TitleScreen from './components/TitleScreen';
@@ -9,6 +9,7 @@ import GlobalNav from "./components/GlobalNav";
 import SocialLinks from "./components/SocialLinks";
 
 import { startShootingStars } from "./components/shootingStars";
+import name from './img/name-2.png';
 
 function Layout() {
   const location = useLocation();
@@ -42,6 +43,13 @@ function Layout() {
   return (
     <div className="container">
       <header>
+        { !isHome ?
+        <NavLink to="/">
+          <div className="header-left">
+              <img src={name} alt="" aria-hidden="true" />
+          </div>
+        </NavLink> : ''}
+        
         <div className="header-right">
           <GlobalNav />
           <SocialLinks />
