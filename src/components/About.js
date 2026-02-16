@@ -2,7 +2,7 @@ function About() {
   return (
     <div className="wrapper about">
         <h2>About Me</h2>
-        <p className="body">I‘m a visual storyteller specializing in coding, illustration and interactive journalism. I think playful but thoughtful design is one of the best ways to engage people, and that interesting stories can be found in even the seemingly mundane. No topic is too big or too small. My work has spanned everything from deep dives into tax bills to quizzes spotting bad movie wigs.</p>
+        <p className="body">I’m a visual storyteller specializing in coding, illustration and interactive journalism. I think playful but thoughtful design is one of the best ways to engage people, and that interesting stories can be found in even the seemingly mundane. No topic is too big or too small. My work has spanned everything from deep dives into tax bills to quizzes spotting bad movie wigs.</p>
         <p className="body">I’m also a firm believer that great work can only come from supportive, healthy work environments. Kindness, transparency and communication are must-haves.</p>
         <p className="body">Currently open to new opportunities. For a printable version of my résumé, click <a href={`${process.env.PUBLIC_URL}/shellytan_resume.pdf`} target="_blank" rel="noopener noreferrer">here</a>.</p>
         <p className="body">Previously:</p>
