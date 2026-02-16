@@ -41,6 +41,9 @@ code {
     @media(max-width: 768px){
         left: 15px;
     }
+    @media(max-width: 580px){
+        display: none;
+    }
 }
 .header-right {
     z-index: 5;
@@ -135,6 +138,8 @@ p.body{
     }
 }
 .portfolio{
+    z-index: 9999;
+    position: relative;
     align-self: flex-start;
     margin-top: 80px;
 
@@ -149,6 +154,13 @@ p.body{
         gap: 25px 30px;
         margin: 0 auto 50px auto;
         max-width: 1000px;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, minmax(0px, 1fr));
+        }
+        @media only screen and (max-width: 500px) {
+            grid-template-columns: 100%;
+        }
         
         > div{
             display: flex; 

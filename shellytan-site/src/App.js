@@ -46,7 +46,7 @@ function Layout() {
         { !isHome ?
         <NavLink to="/">
           <div className="header-left">
-              <img src={name} alt="" aria-hidden="true" />
+              <img src={name} alt="Shelly logo"/>
           </div>
         </NavLink> : ''}
         
