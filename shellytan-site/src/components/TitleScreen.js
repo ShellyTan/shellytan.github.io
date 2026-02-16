@@ -3,7 +3,7 @@ import name from '../img/name-2.png';
 
 function TitleScreen() {
   return (
-    <div className="wrapper">
+    <div className="wrapper title-screen">
         <p className="intro top">Hi, my name is</p>
         <h1>Shelly</h1>
         <div className="name-wrapper">

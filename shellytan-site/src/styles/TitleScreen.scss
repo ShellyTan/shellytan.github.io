@@ -1,12 +1,6 @@
-#title-screen{
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  perspective: 600px;
-  perspective-origin: center bottom;
+.title-screen{
+  position: relative;
+  z-index: 9999;
 }
 h1{
   // Hidden but present for screenreaders
