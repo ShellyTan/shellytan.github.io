@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 import TitleScreen from './components/TitleScreen';
 import About from './components/About';
-import Portfolio from './components/TitleScreen';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import GlobalNav from "./components/GlobalNav";
 import SocialLinks from "./components/SocialLinks";
