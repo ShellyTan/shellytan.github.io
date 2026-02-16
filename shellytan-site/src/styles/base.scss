@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
 @import "_variables.scss";
 @import "StarrySky.scss";
 @import "TitleScreen.scss";
@@ -53,11 +53,7 @@ code {
   }
 }
 .container{
-//   width: 100vw;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
+    padding: 0 15px;
 }
 main{
     display: flex;
@@ -68,3 +64,48 @@ main{
     justify-content: center;
     align-items: center; 
 }
+h2{
+    font-family: 'Silkscreen', 'arial', 'sans-serif';
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: $purple;
+    margin-bottom: 1rem;
+
+    @media(max-width: 768px){
+        font-size: 2rem;
+    }
+}
+p.body{
+  font-family: 'Space Mono', 'arial', 'sans-serif';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  color: $gray;
+
+  @media(max-width: 768px){
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+
+.about{
+    max-width: 700px;
+    margin: auto;
+
+    ul{
+    font-family: 'Space Mono', 'arial', 'sans-serif';
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: $gray;
+    @media(max-width: 768px){
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    }
+    a{
+        color: $green;
+    }
+}
+

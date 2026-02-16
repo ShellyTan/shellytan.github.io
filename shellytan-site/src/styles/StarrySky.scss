@@ -100,4 +100,4 @@ $large-color:  rgba(185, 252, 234, 0.45);
   }
 }
 
-#starry-sky { @include pixel-starry-sky; }
+#starry-sky { @include pixel-starry-sky; transition: opacity 0.5s; &.dim{ opacity: 0.4; } }
