@@ -57,8 +57,16 @@ code {
     @media(max-width: 768px){
         right: 15px;
     }
+    @media(max-width: 480px){
+        display: block;
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 }
 .social-nav {
+    order: 1;
   &__list {
     list-style: none;
     display: flex;
@@ -77,6 +85,15 @@ code {
   a:hover &__icon {
     transform: translateY(2px);
   }
+
+    @media(max-width: 480px){
+        order: 0;
+        width: 100%;
+        &__list {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
 }
 .container{
     padding: 0 15px;

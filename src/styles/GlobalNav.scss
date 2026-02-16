@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-end; // active stays on right
+    justify-content: flex-end;
     gap: 10px;
     list-style: none;
   }
@@ -17,6 +17,7 @@
     pointer-events: none;
     transform: translateX(10px);
     opacity: 0;
+    order: 0;
 
     transition:
       opacity 220ms ease,
@@ -53,7 +54,7 @@
     transition: background 200ms ease, transform 200ms ease;
 
     &:hover {
-    color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 
@@ -62,9 +63,9 @@
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
-    
+
     &::before {
-      content: "❮"; 
+      content: "❮";
       position: absolute;
       left: -10px;
       top: 55%;
@@ -79,5 +80,42 @@
   &:focus-within &__item.is-active &__link::before {
     opacity: 0;
     transform: translateY(-50%) translateX(-4px);
+  }
+  @media (min-width: 480px) {
+    &__item.is-active {
+      order: 0;
+    }
+  }
+
+  // Mobile only: always expanded
+  @media (max-width: 480px) {
+    &__list {
+      justify-content: flex-start;
+      flex-wrap: wrap;           
+    }
+
+    &__item {
+      width: auto;
+      overflow: visible;
+      pointer-events: auto;
+      transform: none;
+      opacity: 1;
+      transition: none; 
+      order: 0;
+    }
+
+    // kill hover/focus reveal behavior on mobile
+    &:hover &__item,
+    &:focus-within &__item {
+      width: auto;
+      overflow: visible;
+      pointer-events: auto;
+      transform: none;
+      opacity: 1;
+    }
+
+    &__item.is-active &__link::before {
+      display: none;
+    }
   }
 }

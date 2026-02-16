@@ -51,8 +51,9 @@ function Layout() {
         </NavLink> : ''}
         
         <div className="header-right">
-          <GlobalNav />
           <SocialLinks />
+          {isHome ? "" : <GlobalNav />}
+          
         </div>
       </header>
 
