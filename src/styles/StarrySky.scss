@@ -1,0 +1,177 @@
+@use "sass:math";
+
+// ---------- Controls ----------
+$starfield-width: 100vw;
+$starfield-height: 100vh;
+
+$seed: 33;
+$jitter: 1;
+$grid: 2px;
+
+$small-count: 120;
+$medium-count: 30;
+$large-count: 10;
+
+$small-size: 2px;
+$medium-size: 4px;
+$large-size: 6px;
+
+$small-color: rgba(243, 143, 238, 0.35);
+$medium-color: rgba(134, 136, 218, 0.70);
+$large-color:  rgba(185, 252, 234, 0.45);
+
+// ---------- Helpers ----------
+@function snap($value, $step) {
+  @if $step <= 1px { @return $value; }
+  @return math.round(math.div($value, $step)) * $step;
+}
+
+@function fract($x) {
+  @return $x - math.floor($x);
+}
+
+@function rand01($n, $salt: 0) {
+  $t: ($n * 12.9898) + ($salt * 78.233) + ($seed * 37.719);
+  @return fract(math.sin($t) * 43758.5453);
+}
+
+@function jitterize($u) {
+  @if $jitter <= 0 { @return $u; }
+  $p: 1 + (0.9 * $jitter);
+  $curved: math.pow($u, $p);
+  $mix: math.min(1, 0.35 * $jitter);
+  @return (1 - $mix) * $u + $mix * $curved;
+}
+
+@function star-shadows($count, $color, $salt: 0) {
+  $shadows: ();
+  @for $i from 1 through $count {
+    $u1: rand01($i * 2, $salt);
+    $u2: rand01($i * 2 + 1, $salt + 999);
+
+    $x: snap(jitterize($u1) * $starfield-width, $grid);
+    $y: snap(jitterize($u2) * $starfield-height, $grid);
+
+    $shadows: append($shadows, $x $y 0 0 $color, comma);
+  }
+  @return $shadows;
+}
+
+// Base container
+#starry-sky {
+  position: fixed;
+  inset: 0;
+  background: none;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+// ---------- Mixin ----------
+@mixin pixel-starry-sky {
+  &::before,
+  &::after,
+  > .star-layer--large {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  // Small stars
+  &::before {
+    content: "";
+    width: $small-size;
+    height: $small-size;
+    background: $small-color;
+    box-shadow: star-shadows($small-count, $small-color, 100);
+  }
+
+  // Medium stars
+  &::after {
+    content: "";
+    width: $medium-size;
+    height: $medium-size;
+    background: $medium-color;
+    box-shadow: star-shadows($medium-count, $medium-color, 200);
+  }
+
+  // Large stars (child element)
+  > .star-layer--large {
+    width: $large-size;
+    height: $large-size;
+    background: $large-color;
+    box-shadow: star-shadows($large-count, $large-color, 300);
+  }
+}
+
+#starry-sky {
+  z-index: 0;
+  @include pixel-starry-sky;
+  transition: opacity 0.5s;
+  --shoot-speed-multiplier: 1.5;
+
+  &.dim { opacity: 0.4; }
+}
+
+/* ============================================================
+   RANDOM (JS-TRIGGERED) SHOOTING STARS + BIG STREAK
+   ============================================================ */
+
+/* Shared look; JS sets CSS vars (--sx,--sy,--dx,--dy,--dur,--angle,--tail,--size) */
+#starry-sky .shooting-star {
+  position: absolute;
+  pointer-events: none;
+
+  left: var(--sx, 20vw);
+  top: var(--sy, 20vh);
+
+  width: var(--size, 2px);
+  height: var(--size, 2px);
+  background: rgba(255, 255, 255, 1);
+
+  /* pixel tail (spacing controlled by --tail) */
+  box-shadow:
+    calc(-1 * var(--tail, 2px)) 0 0 rgba(255,255,255,0.90),
+    calc(-2 * var(--tail, 2px)) 0 0 rgba(255,255,255,0.70),
+    calc(-3 * var(--tail, 2px)) 0 0 rgba(255,255,255,0.50),
+    calc(-4 * var(--tail, 2px)) 0 0 rgba(255,255,255,0.30),
+    calc(-5 * var(--tail, 2px)) 0 0 rgba(255,255,255,0.15);
+
+  transform: translate(0,0) rotate(var(--angle, 35deg));
+  transform-origin: center;
+  opacity: 0;
+
+  will-change: transform, opacity;
+
+  /* only animate when JS toggles this */
+  &.is-active {
+    animation: shoot calc(var(--dur, 1.4s) * var(--shoot-speed-multiplier, 1)) linear 1;
+  }
+}
+
+/* Big streak variant (longer, brighter, thicker) */
+#starry-sky .shooting-star--big {
+  --size: 3px;
+  --tail: 3px;
+
+  box-shadow:
+    calc(-1 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.98),
+    calc(-2 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.88),
+    calc(-3 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.75),
+    calc(-4 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.60),
+    calc(-5 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.45),
+    calc(-6 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.30),
+    calc(-7 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.18);
+}
+
+/* Single-run motion + fade (diagonal) */
+@keyframes shoot {
+  0%   { opacity: 0;   transform: translate(0,0) rotate(var(--angle, 35deg)); }
+  8%   { opacity: 1; }
+  70%  { opacity: 0; transform: translate(var(--dx, 12vw), var(--dy, 8vh)) rotate(var(--angle, 35deg)); }
+  100% { transform: translate(var(--dx, 12vw), var(--dy, 8vh)) rotate(var(--angle, 35deg)); }
+}
+#starry-sky.dim .shooting-star.is-active{
+  display: none;
+  animation: none;
+}
