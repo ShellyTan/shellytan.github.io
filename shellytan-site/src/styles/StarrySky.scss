@@ -108,7 +108,7 @@ $large-color:  rgba(185, 252, 234, 0.45);
   z-index: 0;
   @include pixel-starry-sky;
   transition: opacity 0.5s;
-  --shoot-speed-multiplier: 2;
+  --shoot-speed-multiplier: 1.5;
 
   &.dim { opacity: 0.4; }
 }
@@ -170,4 +170,8 @@ $large-color:  rgba(185, 252, 234, 0.45);
   8%   { opacity: 1; }
   70%  { opacity: 0; transform: translate(var(--dx, 12vw), var(--dy, 8vh)) rotate(var(--angle, 35deg)); }
   100% { transform: translate(var(--dx, 12vw), var(--dy, 8vh)) rotate(var(--angle, 35deg)); }
+}
+#starry-sky.dim .shooting-star.is-active{
+  display: none;
+  animation: none;
 }

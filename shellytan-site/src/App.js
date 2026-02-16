@@ -1,5 +1,5 @@
 import { Routes, Route, Outlet, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import TitleScreen from './components/TitleScreen';
 import About from './components/About';
@@ -11,13 +11,34 @@ import SocialLinks from "./components/SocialLinks";
 import { startShootingStars } from "./components/shootingStars";
 
 function Layout() {
-  useEffect(() => {
-    const stop = startShootingStars(document);
-    return stop;
-  }, []);
-
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  const stopRef = useRef(null);
+
+  useEffect(() => {
+    if (stopRef.current) {
+      stopRef.current();
+      stopRef.current = null;
+      // immediately clear any moving stars
+      document
+        .querySelectorAll("#starry-sky .shooting-star.is-active")
+        .forEach(el => el.classList.remove("is-active"));
+    }
+
+    // only run stars on home
+    if (isHome) {
+      stopRef.current = startShootingStars(document);
+    }
+    // cleanup on unmount
+    return () => {
+      if (stopRef.current) {
+        stopRef.current();
+        stopRef.current = null;
+      }
+    };
+  }, [isHome]);
+
   return (
     <div className="container">
       <header>
@@ -32,16 +53,16 @@ function Layout() {
       </main>
 
       <div id="starry-sky" aria-hidden="true" className={isHome ? "" : "dim"}>
-        <span class="star-layer--large" aria-hidden="true"></span>
-        <span class="shooting-star" aria-hidden="true"></span>
-        <span class="shooting-star" aria-hidden="true"></span>
-        <span class="shooting-star" aria-hidden="true"></span>
-        <span class="shooting-star" aria-hidden="true"></span>
-        <span class="shooting-star" aria-hidden="true"></span>
+        <span className="star-layer--large" aria-hidden="true"></span>
 
-        <span class="shooting-star shooting-star--big" aria-hidden="true"></span>
+        <span className="shooting-star" aria-hidden="true"></span>
+        <span className="shooting-star" aria-hidden="true"></span>
+        <span className="shooting-star" aria-hidden="true"></span>
+        <span className="shooting-star" aria-hidden="true"></span>
+        <span className="shooting-star" aria-hidden="true"></span>
+
+        <span className="shooting-star shooting-star--big" aria-hidden="true"></span>
       </div>
-  
     </div>
   );
 }
