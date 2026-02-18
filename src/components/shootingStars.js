@@ -1,13 +1,12 @@
 function rand(min, max) {
   return Math.random() * (max - min) + min;
 }
-
 function launchStar(el, opts = {}) {
-  // pick random start in viewport-ish %
+  // pick random start %
   const sx = opts.sx ?? rand(5, 85);
   const sy = opts.sy ?? rand(5, 85);
 
-  // small travel distance (not full screen)
+  // small travel distance 
   const dx = opts.dx ?? rand(6, 16);  // vw
   const dy = opts.dy ?? rand(4, 12);  // vh
 
@@ -23,12 +22,11 @@ function launchStar(el, opts = {}) {
   el.style.setProperty("--angle", `${angle}deg`);
   el.style.setProperty("--tail", `${tail}px`);
 
-  // retrigger animation reliably
+  // retrigger animation
   el.classList.remove("is-active");
   // force reflow
   void el.offsetWidth;
   el.classList.add("is-active");
-
   // cleanup after animation
   window.setTimeout(() => el.classList.remove("is-active"), dur * 1000 + 50);
 }
@@ -56,8 +54,7 @@ export function startShootingStars(root = document) {
         const el = stars[Math.floor(Math.random() * stars.length)];
         launchStar(el);
       }
-
-      // occasional big streak (~8% chance)
+      // occasional big streak
       if (Math.random() < 0.08) {
         launchStar(big, {
           dx: rand(18, 30),
@@ -72,7 +69,5 @@ export function startShootingStars(root = document) {
   }
 
   scheduleNext();
-
-  // return stop function (useful for React cleanup)
   return () => { stopped = true; };
 }

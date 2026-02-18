@@ -95,7 +95,7 @@ $large-color:  rgba(185, 252, 234, 0.45);
     box-shadow: star-shadows($medium-count, $medium-color, 200);
   }
 
-  // Large stars (child element)
+  // Large stars
   > .star-layer--large {
     width: $large-size;
     height: $large-size;
@@ -114,10 +114,10 @@ $large-color:  rgba(185, 252, 234, 0.45);
 }
 
 /* ============================================================
-   RANDOM (JS-TRIGGERED) SHOOTING STARS + BIG STREAK
+   RANDOM SHOOTING STARS + BIG STREAK
    ============================================================ */
 
-/* Shared look; JS sets CSS vars (--sx,--sy,--dx,--dy,--dur,--angle,--tail,--size) */
+/* JS sets CSS vars (--sx,--sy,--dx,--dy,--dur,--angle,--tail,--size) */
 #starry-sky .shooting-star {
   position: absolute;
   pointer-events: none;
@@ -140,16 +140,14 @@ $large-color:  rgba(185, 252, 234, 0.45);
   transform: translate(0,0) rotate(var(--angle, 35deg));
   transform-origin: center;
   opacity: 0;
-
   will-change: transform, opacity;
 
-  /* only animate when JS toggles this */
   &.is-active {
     animation: shoot calc(var(--dur, 1.4s) * var(--shoot-speed-multiplier, 1)) linear 1;
   }
 }
 
-/* Big streak variant (longer, brighter, thicker) */
+/* Big streak  */
 #starry-sky .shooting-star--big {
   --size: 3px;
   --tail: 3px;
@@ -163,8 +161,6 @@ $large-color:  rgba(185, 252, 234, 0.45);
     calc(-6 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.30),
     calc(-7 * var(--tail, 3px)) 0 0 rgba(255,255,255,0.18);
 }
-
-/* Single-run motion + fade (diagonal) */
 @keyframes shoot {
   0%   { opacity: 0;   transform: translate(0,0) rotate(var(--angle, 35deg)); }
   8%   { opacity: 1; }
